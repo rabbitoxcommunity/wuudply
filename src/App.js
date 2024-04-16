@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "aos/dist/aos.css";
+import './pages/pageStyles.scss'
+import './primary.css';
+import { Route, Router, RouterProvider, createBrowserRouter } from 'react-router-dom';
+import RouteHandler, { router } from './router/router';
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
+import Home from './pages/Home';
+import ScrollTop from './components/ScrollTop';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+<ScrollTop />
+      <Header />
+        <RouteHandler />
+      <Footer />
+
+    </>
+
   );
 }
 

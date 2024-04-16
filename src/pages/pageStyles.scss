@@ -1,0 +1,606 @@
+.wuudply__banner {
+    position: relative;
+
+    video {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .banner__content {
+        position: absolute;
+        left: 5%;
+        top: 50%;
+
+        // transform: translate(-50%,-50%);
+        h1 {
+            color: #fff;
+            font-size: 75px;
+            font-family: var(--font-primary);
+        }
+    }
+}
+
+// ABOUT US SECTION
+
+.wuudply__about {
+    .about__content {
+        h4 {
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+    }
+}
+
+// FEATURED SECTION
+
+.wuudply__featured {
+    border-radius: 20px;
+    background: #FAF4E8;
+
+    .featured__grid {
+        border-radius: 20px;
+        background: #CABA99;
+        overflow: auto;
+        margin-bottom: 30px;
+
+        .featured__content {
+            padding: 50px;
+
+            h3 {
+                font-weight: 700;
+            }
+
+            h5 {
+                font-size: 36px;
+                font-weight: 300;
+                margin-bottom: 25px;
+            }
+        }
+
+        .featured__img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// BEST SELLING
+
+.wuudply__bestselling {
+    .heading {
+        padding-bottom: 60px;
+
+        h3 {
+            line-height: 1.1;
+        }
+    }
+
+    .features {
+        h3 {
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        h4 {
+            font-weight: 400;
+        }
+
+        table {
+            margin-top: 30px;
+            width: 98%;
+
+            th,
+            td {
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            tr {
+                border-top: 1px solid #000;
+                border-bottom: 1px solid #000;
+
+                &:first-child {
+                    border-top: 1PX solid #fff;
+                }
+            }
+        }
+
+        .table-hover tbody tr:hover td,
+        .table-hover tbody tr:hover th {
+            background-color: #FAF4E8;
+            box-shadow: none;
+            outline: none;
+            cursor: pointer;
+            // border: none;
+        }
+    }
+
+}
+
+
+// ABOUT US PAGE
+.innerpage.wuudly__about {
+    h2.core {
+        font-size: 192px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 210.651px;
+        letter-spacing: -5.718px;
+        padding: 80px 0;
+        padding-bottom: 0;
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+        &:last-child {
+            padding-bottom: 80px;
+        }
+    }
+
+    h4 {
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 57.6px;
+        /* 120% */
+        letter-spacing: -0.72px;
+        padding: 80px 0;
+    }
+
+    h5 {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 41.6px;
+        /* 130% */
+        letter-spacing: -0.48px;
+
+        &:first-child {
+            margin-bottom: 40px;
+            padding-top: 60px;
+        }
+
+        &:last-child {
+            padding-bottom: 80px;
+        }
+    }
+
+    .eco__friendly {
+        border-radius: 18px;
+        background: #FAF4E8;
+        overflow: auto;
+        margin-bottom: 80px;
+
+        .eco__content {
+            img {
+                width: 100%;
+            }
+
+            h2 {
+                font-size: 51px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 56.1px;
+                letter-spacing: -1.53px;
+                padding-bottom: 30px;
+            }
+
+            p {
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 41.6px;
+                letter-spacing: -0.96px;
+            }
+
+            .eco-responsibility {
+                padding: 0 30px;
+                padding-left: 15px;
+            }
+        }
+    }
+}
+
+
+// PRODUCTS PAGE
+.wuudly__products {
+    .products__tabs {
+        background: #FAF4E8;
+        padding: 30px 0;
+
+        .tab__products {
+            display: flex;
+            align-items: center;
+
+            .productGrid {
+                display: flex;
+                align-items: center;
+                background-color: #fff;
+                padding: 15px;
+                border-radius: 8px;
+                margin-right: 15px;
+                transition: all 2s ease;
+
+                &.active {
+                    background-color: #FFECC6;
+                }
+
+                &:hover {
+                    background-color: #FFECC6;
+                    cursor: pointer;
+                    -webkit-transition: background-color 0.3s linear;
+                    -ms-transition: background-color 0.3s linear;
+                    transition: background-color 0.3s linear;
+
+                    .title {
+                        transition: all 2s ease;
+
+                        img {
+                            transform: translateX(2px);
+                            transition: all 0.5s ease-in-out;
+                        }
+                    }
+                }
+
+                .image {
+                    margin-right: 10px;
+
+                    img {
+                        width: 56px;
+                        height: 56px;
+                        object-fit: cover;
+                        border-radius: 8px;
+                    }
+                }
+
+                .title {
+                    font-size: 23px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 29.737px;
+                    letter-spacing: -0.449px;
+                    transition: all 2s ease;
+
+                    img {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .product__descriptions {
+        padding: 60px 0;
+
+        .product__items {
+            position: relative;
+            z-index: 1;
+
+            .navigation {
+                position: absolute;
+                right: 0;
+                z-index: 9;
+                top: 14px;
+                background-color: #fff;
+
+                .arrow-btn {
+                    border-radius: 100%;
+                    background-color: transparent;
+                    border: none;
+
+                    :focus {
+                        border: none;
+                        outline: none;
+                        box-shadow: none;
+                    }
+
+                    img {
+                        height: 50px;
+                    }
+                }
+            }
+
+            .product__header {
+                display: flex;
+                align-items: center;
+                position: relative;
+                z-index: 1;
+
+                .product__logo {
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 80px;
+
+                    img {
+                        width: 400px;
+
+                    }
+
+                    h2 {
+                        text-transform: uppercase;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 56px;
+                        line-height: 78.368px;
+                        letter-spacing: -1.68px;
+                        padding-left: 20px;
+                    }
+                }
+
+                .swiper-button-prev {
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    z-index: 99;
+                }
+
+                .swiper-button-next {
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            .product__image {
+                img {
+                    width: 100%;
+                    height: 610px;
+                    object-fit: cover;
+                    border-radius: 20px;
+                }
+            }
+
+            .product__details {
+                padding-left: 20px;
+
+                h2 {
+                    font-size: 38px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 46.8px;
+                    letter-spacing: -0.57px;
+                    margin-bottom: 0;
+                }
+
+                h5 {
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 38.4px;
+                    letter-spacing: -0.48px;
+                    padding: 10px 0px 30px 0px;
+
+                }
+
+                h6 {
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 31.29px;
+                    letter-spacing: -0.12px;
+                }
+
+                table {
+                    margin-top: 10px;
+                    width: 98%;
+
+                    th,
+                    td {
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+
+                    tr {
+                        border-top: 1px solid #000;
+                        border-bottom: 1px solid #000;
+                    }
+                }
+
+                .table-hover tbody tr:hover td,
+                .table-hover tbody tr:hover th {
+                    background-color: #FAF4E8;
+                    box-shadow: none;
+                    outline: none;
+                    cursor: pointer;
+                    // border: none;
+                }
+            }
+        }
+
+    }
+}
+
+// VISION PAGE
+.wuudly__vision {
+    h2 {
+        font-size: 460px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 512.206px;
+        /* 111.349% */
+        letter-spacing: -13.8px;
+    }
+
+    h4 {
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 57.6px;
+        letter-spacing: -0.72px;
+        padding: 80px 0;
+    }
+
+    h5 {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 41.6px;
+        letter-spacing: -0.48px;
+        padding-bottom: 60px;
+    }
+
+    .vision__footer {
+        padding-top: 80px;
+    }
+
+    .our__ethos {
+        padding: 80px 0;
+        background: #FAF4E8;
+
+        h2 {
+            font-size: 68px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 74.8px;
+            /* 110% */
+            letter-spacing: -2.04px;
+        }
+
+        h4 {
+            color: #000;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 41.6px;
+            padding-bottom: 40px;
+            letter-spacing: -0.48px;
+        }
+
+        .director {
+            h5 {
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: .7;
+                /* 160% */
+                letter-spacing: -0.39px;
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+
+            span {
+                font-family: "Neue Haas Grotesk Display Pro";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 41.6px;
+                /* 208% */
+                letter-spacing: -0.3px;
+            }
+        }
+    }
+
+}
+
+// INNOVATION PAGE
+.wuudly__innovation {
+    h3 {
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.1;
+        letter-spacing: -0.72px;
+        padding: 80px 0;
+    }
+
+    .banner__innovation {
+        height: 130vh;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        display: flex;
+        align-items: end;
+        padding: 80px 0;
+
+        h4 {
+            font-size: 30.36px;
+            font-style: normal;
+            font-weight: 200;
+            line-height: 36.432px;
+            /* 120% */
+            letter-spacing: -0.455px;
+            color: #fff;
+        }
+    }
+
+    .gurjan-plywood {
+        border-radius: 18.861px;
+        background: #FAF4E8;
+        overflow: hidden;
+
+        h5 {
+            font-size: 35.154px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 45.7px;
+            /* 130% */
+            letter-spacing: -1.055px;
+            padding: 80px 60px;
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 540px;
+        }
+    }
+}
+
+// GALLERY PAGE
+.wuudply__gallery {
+    .gallery__grid {
+        img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+    }
+}
+
+// CONTACT PAGE
+
+.wuudply__contact {
+    h2 {
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 110px;
+        letter-spacing: -2.4px;
+        padding-bottom: 80px;
+    }
+
+    h4 {
+        font-size: 41.179px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 49.415px;
+        /* 120% */
+        letter-spacing: -0.618px;
+    }
+
+    .whatsapp {
+        margin-top: 70px;
+        padding: 60px 0;
+        border-radius: 20px 20px 0px 0px;
+        background: #FAF4E8;
+
+        h3 {
+            font-size: 68px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 81.6px;
+            letter-spacing: -2.04px;
+
+            a {
+                color: #000;
+                text-decoration: none;
+            }
+        }
+    }
+}
