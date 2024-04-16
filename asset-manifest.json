@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/wuudply/static/css/main.eb46489c.css",
+    "main.js": "/wuudply/static/js/main.dddcb7dd.js",
+    "static/js/453.e2bce2f0.chunk.js": "/wuudply/static/js/453.e2bce2f0.chunk.js",
+    "static/media/NeueHaasDisplayBold.woff": "/wuudply/static/media/NeueHaasDisplayBold.4b2aa107cd48d0ad4eb5.woff",
+    "static/media/NeueHaasDisplayLight.woff": "/wuudply/static/media/NeueHaasDisplayLight.0873e56da0b9817f5430.woff",
+    "static/media/NeueHaasDisplayMediu.woff": "/wuudply/static/media/NeueHaasDisplayMediu.ffd6b24657b105883127.woff",
+    "static/media/NeueHaasDisplayBlack.woff": "/wuudply/static/media/NeueHaasDisplayBlack.7df2156651dbb6aabef7.woff",
+    "index.html": "/wuudply/index.html",
+    "main.eb46489c.css.map": "/wuudply/static/css/main.eb46489c.css.map",
+    "main.dddcb7dd.js.map": "/wuudply/static/js/main.dddcb7dd.js.map",
+    "453.e2bce2f0.chunk.js.map": "/wuudply/static/js/453.e2bce2f0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb46489c.css",
+    "static/js/main.dddcb7dd.js"
+  ]
+}
