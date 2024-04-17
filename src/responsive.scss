@@ -29,7 +29,20 @@
     h4 {
         font-size: 25px;
     }
-
+    .main__header .header .navbar .menu-toggle {
+        width: 35px;
+        height: 15px;
+    }
+    .main__header .header .navbar .menu-toggle.active .line:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+    .main__header .header .navbar .menu-toggle.active .line:nth-child(2) {
+        transform: translateY(-5px) rotate(-45deg);
+    }
+    .main__header .header .logo img {
+        width: 180px;
+    }
+        
     .main__header .menu__lists .menu__items ul li {
         font-size: 45px;
     }
