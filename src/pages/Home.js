@@ -34,7 +34,7 @@ export default function Home() {
                 <div className="featured__content" >
                   <h3>Plywood</h3>
                   <h5>Exceptional range of commercial and waterproof plywood.</h5>
-                  <button className="btn btn-rounded" ><img src="assets/img/btn-arrow.svg" alt="" /></button>
+                  <button className="btn btn-rounded" ><img src="assets/img/products/arrow.svg" alt="" /></button>
                 </div>
               </div>
               <div className="col-md-6 ps-0">
@@ -55,7 +55,7 @@ export default function Home() {
                 <div className="featured__content">
                   <h3>Block board</h3>
                   <h5 >IS1659 Block Boards crafted from handpicked seasoned timber.</h5>
-                  <button className="btn btn-rounded" ><img src="assets/img/btn-arrow.svg" alt="" /></button>
+                  <button className="btn btn-rounded" ><img src="assets/img/products/arrow.svg" alt="" /></button>
                 </div>
               </div>
             </div>

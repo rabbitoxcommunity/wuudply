@@ -41,9 +41,8 @@ export default function Header() {
   return (
     <>
       <div className={`main__header ${menuActive ? 'show' : ''}`}>
-        <header id="header" className={`header d-flex align-items-center fixed-top ${isScrolledDown ? 'sticked' : ''} ${homePage ? '' : 'bg-white'}`}>
+        <header id="header" className={`header d-flex align-items-center fixed-top ${isScrolledDown ? 'sticked' : ''} ${homePage ? '' : menuActive ? '' : 'bg-white'}`}>
           <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
-
             <Link to='/' className={`logo d-flex align-items-center ${homePage ? 'logo-home' : ''}`}>
               <img src="assets/img/logo.svg" alt="" />
             </Link>
@@ -58,7 +57,6 @@ export default function Header() {
                 <div className={`line ${ homePage && 'home-line'}`} ></div>
               </div>
             </nav>
-
           </div>
         </header>
 
