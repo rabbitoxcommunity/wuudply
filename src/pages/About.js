@@ -23,7 +23,7 @@ export default function About() {
           <h2 className="core pt-0 text-right">Core Veneers</h2>
         </div>
         <div className="eco__friendly">
-        <div className="row align-items-center">
+        <div className="row align-items-center sm-reverse">
           <div className="col-md-6">
             <div className="eco__content">
               <img src="assets/img/about-1.png" alt="" />

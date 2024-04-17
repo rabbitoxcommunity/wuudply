@@ -50,7 +50,7 @@ export default function Header() {
             <i className="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
             <i className="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
             <nav className="navbar">
-            <Link to='/contact'> <div className="btn btn-primary">Contact</div></Link>
+            <Link to='/contact'> <div className="btn btn-primary hidden-xs">Contact</div></Link>
   
               <div className={`menu-toggle ${menuActive ? 'active' : ''}`} onClick={handleMenu}>
                 <div className={`line ${ homePage && 'home-line'}`}></div>

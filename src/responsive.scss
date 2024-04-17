@@ -1,0 +1,383 @@
+@media only screen and (max-width: 600px) {
+
+    // default
+    .hidden-xs {
+        display: none;
+    }
+
+    label {
+        font-size: 18px;
+        font-style: normal;
+        line-height: 18.722px;
+        /* 93.612% */
+        letter-spacing: -0.3px;
+        padding-bottom: 10px;
+    }
+
+    .sm-reverse {
+        flex-direction: column-reverse;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    .main__header .menu__lists .menu__items ul li {
+        font-size: 45px;
+    }
+
+    .wuudply__banner .banner__content {
+        left: 4%;
+        top: 70%;
+
+        h1 {
+            font-size: 45px;
+        }
+    }
+
+    .wuudply__about .about__content h4 {
+        margin-bottom: 25px;
+    }
+
+    .wuudply__featured .featured__grid .featured__content {
+        padding: 28px;
+    }
+
+    .wuudply__featured .featured__grid {
+        overflow: hidden;
+
+        .featured__content h5 {
+            font-size: 21px;
+        }
+    }
+
+    .btn-rounded img {
+        height: 50px !important;
+    }
+
+    .wuudply__bestselling {
+        .heading {
+            padding-bottom: 0;
+        }
+
+        .features {
+            padding-top: 40px;
+        }
+    }
+
+    .wuudply__footer {
+        .footer__widgets {
+            padding-bottom: 40px;
+        }
+
+        .upper__footer .copyright {
+            text-align: left;
+            padding-top: 0;
+            padding-bottom: 40px;
+        }
+
+        .footer__bottom {
+            .footer__logo__section h2 {
+                font-size: 40px;
+                line-height: 1.2;
+            }
+        }
+    }
+
+    .innerpage.wuudly__about {
+        h2.core:last-child {
+            padding-bottom: 80px;
+            text-align: center;
+        }
+
+        h2.core {
+            font-size: 100px;
+            line-height: 1.1;
+            letter-spacing: -5.718px;
+            padding: 80px 0;
+            padding-bottom: 0;
+        }
+    }
+
+    .wuudly__innerBanner {
+        margin-top: 0;
+
+        h1 {
+            color: #fff;
+            color: #fff;
+            font-size: 38px;
+            font-family: var(--font-primary);
+            z-index: 11;
+            position: relative;
+            padding-bottom: 50px;
+        }
+    }
+
+    .innerpage.wuudly__about {
+        .eco__friendly {
+            overflow: hidden;
+
+            .eco-responsibility {
+                padding: 20px !important;
+                padding-top: 60px !important;
+            }
+
+            .eco__content {
+                p {
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 1.4;
+                    letter-spacing: -0.96px;
+                }
+
+                h2 {
+                    font-size: 43px;
+                    font-style: normal;
+                    font-weight: 300 !important;
+                    line-height: 1.1;
+                    letter-spacing: -1.53px;
+                    padding-bottom: 30px;
+                }
+            }
+        }
+
+        h4 {
+            font-size: 30px;
+            line-height: 1.4;
+            padding: 50px 0;
+            padding-bottom: 0;
+        }
+
+        h5 {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 1.4;
+            letter-spacing: -0.48px;
+        }
+    }
+
+    .wuudly__products {
+        .products__tabs {
+            .tab__products {
+                display: -ms-flexbox !important;
+                display: flex !important;
+                -ms-flex-wrap: nowrap !important;
+                flex-wrap: nowrap !important;
+                overflow-x: auto;
+                overflow-y: hidden;
+                text-align: center;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+
+                .productGrid {
+                    padding: 10px;
+
+                    .title {
+                        font-size: 18px;
+                    }
+                }
+
+            }
+        }
+
+        .product__header {
+            justify-content: center;
+        }
+
+        .product__logo {
+            flex-direction: column;
+            text-align: left;
+            padding-bottom: 35px !important;
+            padding-top: 50px;
+
+            img {
+                width: 250px !important;
+                margin: 0 auto;
+                padding-bottom: 10px;
+            }
+
+            h2 {
+                padding-left: 0 !important;
+                font-size: 35px !important;
+                line-height: 1.4 !important;
+                text-align: center;
+            }
+        }
+
+        .navigation .arrow-btn img {
+            height: 40px !important;
+        }
+
+        .product__items .navigation {
+            top: -2% !important;
+            background-color: #fff;
+        }
+
+        .product__image {
+            img {
+                height: 350px !important;
+            }
+
+            margin-bottom: 40px;
+        }
+
+        .product__details h2 {
+            font-size: 28px !important;
+            line-height: 1.4 !important;
+        }
+
+        .subtitle h4 {
+            font-size: 20px;
+        }
+
+        .product__details {
+            padding-left: 0 !important;
+
+            h5 {
+                font-size: 22px !important;
+                line-height: 1.4 !important;
+            }
+        }
+    }
+
+    .wuudly__vision {
+        position: relative;
+
+        h2 {
+            font-size: 137px;
+            line-height: 126px;
+            letter-spacing: -6px;
+            padding-bottom: 20px;
+        }
+
+        h4 {
+            font-size: 30px !important;
+            line-height: 1.4 !important;
+            padding: 30px 0 !important;
+        }
+
+        h5 {
+            font-size: 22px;
+            line-height: 1.4;
+            padding-bottom: 0;
+        }
+
+        .our__ethos {
+            padding: 40px 0;
+
+            h2 {
+                font-size: 40px;
+                line-height: 1.3;
+
+                br {
+                    display: none;
+                }
+            }
+
+            h4 {
+                font-size: 22px !important;
+                line-height: 1.4 !important;
+                padding-top: 0 !important;
+            }
+        }
+    }
+
+    .wuudly__innovation {
+        h3 {
+            font-size: 30px !important;
+            line-height: 1.4 !important;
+            padding: 30px 0 !important;
+        }
+
+        .banner__innovation {
+
+            background-position: top;
+
+            h4 {
+                font-size: 23px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 29.9px;
+                /* 130% */
+                letter-spacing: -0.345px;
+            }
+        }
+
+        .gurjan-plywood {
+            h5 {
+                font-size: 23px;
+                font-style: normal;
+                line-height: 29.9px;
+                /* 130% */
+                letter-spacing: -0.345px;
+                padding: 30px;
+            }
+        }
+    }
+
+    .wuudply__gallery {
+        .gallery__grid img {
+            height: 370px;
+            margin-bottom: 30px;
+        }
+
+    }
+
+    .wuudply__contact {
+        .whatsapp {
+            min-height: 300px;
+            span{
+                display: none;
+            }
+            h3 {
+                font-size: 38px;
+                line-height: 45.6px;
+                /* 120% */
+                letter-spacing: -1.14px;
+            }
+        }
+
+        h2 {
+            font-size: 48px;
+            font-style: normal;
+            line-height: 57.6px;
+            /* 120% */
+            letter-spacing: -1.44px;
+        }
+
+        h4 {
+            font-size: 23px;
+            font-style: normal;
+            line-height: 29.9px;
+            /* 130% */
+            letter-spacing: -0.345px;
+            padding-right: 30px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+/* IPAD PRO */
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {}
+
+
+/* TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {}
+
+
+/* 13 INCH SCREEN */
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {}

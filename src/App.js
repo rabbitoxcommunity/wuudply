@@ -8,6 +8,7 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Home from './pages/Home';
 import ScrollTop from './components/ScrollTop';
+import './responsive.scss';
 function App() {
   return (
     <>
