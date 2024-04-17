@@ -15,7 +15,7 @@ export default function Footer() {
                 <ul>
                   <li><Link to='/about'>About</Link></li>
                   <li><Link to='/products'>Products</Link></li>
-                  <li><Link to='/'>Vision & Mission</Link></li>
+                  <li><Link to='/'>Vision</Link></li>
                   <li><Link to='/innovation'>Innovation</Link></li>
                   <li><Link to='/contact'>Contact</Link></li>
                 </ul>
@@ -50,7 +50,7 @@ export default function Footer() {
       <div className="footer__bottom">
         <div className="container">
           <div className="footer__logo__section">
-            <div className="col-md-6">
+            <div className="col-md-6 col-tab-12">
               <h2>Beyond Limits. <br />Beyond Ultra Quality.</h2>
             </div>
             <div className="footer__logo">

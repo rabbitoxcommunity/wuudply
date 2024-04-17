@@ -14,7 +14,7 @@ export default function Innovation() {
             </div>
             <div className="banner__innovation" style={{backgroundImage:'url(assets/img/innovation-banner.jpg)'}}>
                <div className="container">
-               <div className="offset-md-6">
+               <div className="offset-md-6 offset-tab-4">
                <h4>Wuudply represents the flawless synergy between Innovation, quality, aesthetics, and customer-centricity, yielding exceptional products. This esteemed reputation has positioned Wuudply as the preferred choice among top-tier builders and architects.</h4>
                </div>
                </div>

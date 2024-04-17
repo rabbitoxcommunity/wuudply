@@ -67,7 +67,7 @@ function Contact() {
                 <div className="container">
                     <h2>Want to know more? </h2>
                     <div className="row justify-content-between">
-                        <div className="col-md-5">
+                        <div className="col-md-5 col-tab-6">
                             <h4>We’re always happy to hear from customers, partners, and distributors.</h4>
                         </div>
                         <div className="col-md-6">
