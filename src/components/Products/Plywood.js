@@ -364,7 +364,7 @@ export default function Plywood() {
           plyWoodData?.map((ele, i) => {
             return (
               <SwiperSlide key={i} >
-                <div className="row align-items-center" data-aos="fade-in">
+                <div className="row align-items-center" data-aos="fade-up">
                   <div className="col-md-12">
                     <div className="product__header">
                       <div className="product__logo">

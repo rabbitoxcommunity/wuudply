@@ -65,13 +65,13 @@ function Contact() {
             <InnerBanner image={'assets/img/contact.jpg'} title='Contact' />
             <section className='pb-0'>
                 <div className="container">
-                    <h2>Want to know more? </h2>
+                    <h2 data-aos="fade-up" data-aos-duration="1000">Want to know more? </h2>
                     <div className="row justify-content-between">
                         <div className="col-md-5 col-tab-6">
-                            <h4>We’re always happy to hear from customers, partners, and distributors.</h4>
+                            <h4 data-aos="fade-up" data-aos-duration="1500">We’re always happy to hear from customers, partners, and distributors.</h4>
                         </div>
                         <div className="col-md-6">
-                            <form ref={form} onSubmit={sendEmail}>
+                            <form ref={form} onSubmit={sendEmail} data-aos="fade-up" data-aos-duration="3000">
                                 <div className="form-group">
                                     <label htmlFor="name">Name</label>
                                     <input type="text" className="form-control" name='name' onChange={handleChange} />
@@ -97,7 +97,7 @@ function Contact() {
 
                 <div className="whatsapp">
                     <div className="container">
-                        <h3><a href="https://wa.me/+919895112233" target='_blank'><span>Whatsapp :</span> +91 9895 112 233</a> <br /> <a target='_blank' href="mailto:Info@wuudply.in"><span>Email :</span > Info@wuudply.in</a></h3>
+                        <h3><a data-aos="fade-up" data-aos-duration="1500" href="https://wa.me/+919895112233" target='_blank'><span>Whatsapp :</span> +91 9895 112 233</a> <br /> <a target='_blank' data-aos="fade-up" data-aos-duration="2000" href="mailto:Info@wuudply.in"><span>Email :</span > Info@wuudply.in</a></h3>
                     </div>
                 </div>
             </section>
