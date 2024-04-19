@@ -4,9 +4,11 @@ import Plywood from '../components/Products/Plywood'
 import Doors from '../components/Products/Doors'
 import BlockBoard from '../components/Products/BlockBoard'
 import Decorative from '../components/Products/Decorative'
+import { useLocation } from 'react-router-dom'
 
 export default function Products() {
-    const [tabs, setTabs] = useState('plywood')
+    let { state } = useLocation();
+    const [tabs, setTabs] = useState(state ? state?.setTab : 'plywood')
     return (
         <div className='innerpage wuudly__products'>
             <InnerBanner image={'assets/img/products.jpg'} title='Wuudply Products' />

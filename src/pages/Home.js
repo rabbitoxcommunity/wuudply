@@ -1,6 +1,7 @@
 import Aos from 'aos';
 import React, { useEffect } from 'react'
 import { Table } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   useEffect(function () {
@@ -21,7 +22,7 @@ export default function Home() {
           <div className="offset-md-6 col-md-6">
             <div className="about__content" data-aos="fade-up">
               <h4>Wuud Ply is one of the most trusted names in South India for authentic timber-based plywood  since 1986, from Primeply Industries.</h4>
-              <button className='btn btn-secondary'>Learn More</button>
+              <Link to='/about'><button className='btn btn-secondary'>Learn More</button></Link>
             </div>
           </div>
         </div>
@@ -34,7 +35,8 @@ export default function Home() {
                 <div className="featured__content" >
                   <h3>Plywood</h3>
                   <h5>Exceptional range of commercial and waterproof plywood.</h5>
-                  <button className="btn btn-rounded" ><img src="assets/img/products/arrow.svg" alt="" /></button>
+                  <Link to='/products'><button className="btn btn-rounded" ><img src="assets/img/products/arrow.svg" alt="" /></button></Link>
+                  
                 </div>
               </div>
               <div className="col-md-6 ps-0">
@@ -45,7 +47,7 @@ export default function Home() {
             </div>
           </div>
           <div className="featured__grid"  data-aos="fade-in">
-            <div className="row align-items-center">
+            <div className="row align-items-center sm-reverse">
               <div className="col-md-6 pe-0">
                 <div className="featured__img">
                   <img src="assets/img/blockboard.jpg" alt="" />
@@ -55,13 +57,15 @@ export default function Home() {
                 <div className="featured__content">
                   <h3>Block board</h3>
                   <h5 >IS1659 Block Boards crafted from handpicked seasoned timber.</h5>
-                  <button className="btn btn-rounded" ><img src="assets/img/products/arrow.svg" alt="" /></button>
+                  <Link to='/products' state={{ setTab: "blockBoard" }}> <button className="btn btn-rounded" ><img src="assets/img/products/arrow.svg" alt="" /></button></Link>
+                 
                 </div>
               </div>
             </div>
           </div>
           <div className="text-center mt-5">
-            <button className='btn btn-secondary'>View All Prodcuts</button>
+          <Link to='/products'> <button className='btn btn-secondary'>View All Prodcuts</button></Link>
+           
           </div>
         </div>
       </section>
@@ -150,7 +154,7 @@ export default function Home() {
             </div>
           </div>
           <div className="text-center mt-5">
-            <button className='btn btn-secondary'>View All</button>
+           <Link to='/products'> <button className='btn btn-secondary'>View All</button></Link>
           </div>
         </div>
       </section>

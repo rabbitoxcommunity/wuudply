@@ -1,5 +1,15 @@
 @media only screen and (max-width: 600px) {
 
+    .container {
+        width: 90% !important;
+    }
+
+    .menu__items {
+        ul {
+            line-height: 1.4 !important;
+        }
+    }
+
     // default
     .hidden-xs {
         display: none !important;
@@ -29,20 +39,24 @@
     h4 {
         font-size: 25px;
     }
+
     .main__header .header .navbar .menu-toggle {
         width: 35px;
         height: 15px;
     }
+
     .main__header .header .navbar .menu-toggle.active .line:nth-child(1) {
         transform: translateY(6px) rotate(45deg);
     }
+
     .main__header .header .navbar .menu-toggle.active .line:nth-child(2) {
         transform: translateY(-5px) rotate(-45deg);
     }
+
     .main__header .header .logo img {
         width: 180px;
     }
-        
+
     .main__header .menu__lists .menu__items ul li {
         font-size: 45px;
     }
@@ -122,6 +136,7 @@
 
     .wuudly__innerBanner {
         margin-top: 0;
+        background-position: center;
 
         h1 {
             color: #fff;
@@ -148,7 +163,7 @@
                     font-size: 24px;
                     font-style: normal;
                     font-weight: 300;
-                    line-height: 1.4;
+                    line-height: 1.3;
                     letter-spacing: -0.96px;
                 }
 
@@ -165,7 +180,7 @@
 
         h4 {
             font-size: 30px;
-            line-height: 1.4;
+            line-height: 1.3;
             padding: 50px 0;
             padding-bottom: 0;
         }
@@ -174,7 +189,7 @@
             font-size: 24px;
             font-style: normal;
             font-weight: 300;
-            line-height: 1.4;
+            line-height: 1.3;
             letter-spacing: -0.48px;
         }
     }
@@ -203,27 +218,28 @@
             }
         }
 
-        .product__header {
-            justify-content: center;
-        }
+        // .product__header {
+        //     justify-content: center;
+        // }
 
         .product__logo {
             flex-direction: column;
-            text-align: left;
+            text-align: left !important;
+            align-items: start !important;
             padding-bottom: 35px !important;
-            padding-top: 50px;
+            // padding-top: 50px;
 
             img {
-                width: 250px !important;
-                margin: 0 auto;
+                width: 220px !important;
+                // margin: 0 auto;
                 padding-bottom: 10px;
             }
 
             h2 {
                 padding-left: 0 !important;
-                font-size: 35px !important;
-                line-height: 1.4 !important;
-                text-align: center;
+                font-size: 28px !important;
+                line-height: 1.3 !important;
+                // text-align: center;
             }
         }
 
@@ -232,7 +248,7 @@
         }
 
         .product__items .navigation {
-            top: -2% !important;
+            top: -1% !important;
             background-color: #fff;
         }
 
@@ -241,12 +257,12 @@
                 height: 350px !important;
             }
 
-            margin-bottom: 40px;
+            margin-top: 40px;
         }
 
         .product__details h2 {
             font-size: 28px !important;
-            line-height: 1.4 !important;
+            line-height: 1.3 !important;
         }
 
         .subtitle h4 {
@@ -255,10 +271,22 @@
 
         .product__details {
             padding-left: 0 !important;
+            padding-top: 20px;
 
             h5 {
                 font-size: 22px !important;
-                line-height: 1.4 !important;
+                line-height: 1.3 !important;
+            }
+        }
+
+        .wuudboard {
+            h3 {
+                font-size: 20.21px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 26.273px;
+                /* 130% */
+                letter-spacing: -0.303px;
             }
         }
     }
@@ -267,7 +295,7 @@
         position: relative;
 
         h2 {
-            font-size: 137px;
+            font-size: 130px;
             line-height: 126px;
             letter-spacing: -6px;
             padding-bottom: 20px;
@@ -275,13 +303,13 @@
 
         h4 {
             font-size: 30px !important;
-            line-height: 1.4 !important;
+            line-height: 1.3 !important;
             padding: 30px 0 !important;
         }
 
         h5 {
             font-size: 22px;
-            line-height: 1.4;
+            line-height: 1.3;
             padding-bottom: 0;
         }
 
@@ -299,7 +327,7 @@
 
             h4 {
                 font-size: 22px !important;
-                line-height: 1.4 !important;
+                line-height: 1.3 !important;
                 padding-top: 0 !important;
             }
         }
@@ -307,8 +335,8 @@
 
     .wuudly__innovation {
         h3 {
-            font-size: 30px !important;
-            line-height: 1.4 !important;
+            font-size: 28px !important;
+            line-height: 1.3 !important;
             padding: 30px 0 !important;
         }
 
@@ -363,7 +391,8 @@
         }
 
         h2 {
-            font-size: 48px;
+            font-size: 38px;
+            padding-bottom: 40px;
             font-style: normal;
             line-height: 57.6px;
             /* 120% */
@@ -380,6 +409,14 @@
             margin-bottom: 30px;
         }
     }
+
+    .wuudly__products .products__tabs {
+        padding: 16px 0;
+    }
+
+    .wuudply__banner video {
+        height: 80vh;
+    }
 }
 
 
@@ -390,16 +427,18 @@
         width: 100%;
         height: 80vh;
     }
-    
-    
+
+
     .col-tab-12 {
         flex: 0 0 auto;
         width: 100%;
     }
+
     .col-tab-6 {
         flex: 0 0 auto;
         width: 50%;
     }
+
     .offset-tab-4 {
         margin-left: 33.33333333%;
     }
@@ -449,6 +488,7 @@
             margin-bottom: 40px;
             padding-top: 0px;
         }
+
         .eco__friendly {
             overflow: hidden;
 
@@ -543,7 +583,7 @@
 
         h2 {
             font-size: 365px;
-            line-height: 1.4;
+            line-height: 1.3;
         }
 
         h5 {
@@ -570,31 +610,36 @@
                 font-size: 30px;
                 font-style: normal;
                 font-weight: 300;
-                line-height: 1.4;
+                line-height: 1.3;
                 letter-spacing: -1.055px;
                 padding: 43px;
             }
         }
     }
+
     .wuudply__gallery .gallery__grid img {
         width: 100%;
         height: 310px;
         object-fit: cover;
         border-radius: 12px;
     }
-    .wuudply__contact{
-        h2{
+
+    .wuudply__contact {
+        h2 {
             font-size: 70px;
-    padding-bottom: 40px;
+            padding-bottom: 40px;
         }
-        h4{
+
+        h4 {
             font-size: 38px;
         }
+
         .whatsapp h3 {
             font-size: 48px;
             line-height: 1.3;
         }
     }
+
     .footer__logo__section {
         min-height: 50vh !important;
     }
@@ -608,10 +653,12 @@
         flex: 0 0 auto;
         width: 100%;
     }
+
     .col-tab-6 {
         flex: 0 0 auto;
         width: 50%;
     }
+
     .offset-tab-4 {
         margin-left: 33.33333333%;
     }
@@ -661,6 +708,7 @@
             margin-bottom: 40px;
             padding-top: 0px;
         }
+
         .eco__friendly {
             overflow: hidden;
 
@@ -755,7 +803,7 @@
 
         h2 {
             font-size: 280px;
-            line-height: 1.4;
+            line-height: 1.3;
         }
 
         h5 {
@@ -782,31 +830,36 @@
                 font-size: 30px;
                 font-style: normal;
                 font-weight: 300;
-                line-height: 1.4;
+                line-height: 1.3;
                 letter-spacing: -1.055px;
                 padding: 43px;
             }
         }
     }
+
     .wuudply__gallery .gallery__grid img {
         width: 100%;
         height: 220px;
         object-fit: cover;
         border-radius: 12px;
     }
-    .wuudply__contact{
-        h2{
+
+    .wuudply__contact {
+        h2 {
             font-size: 70px;
-    padding-bottom: 40px;
+            padding-bottom: 40px;
         }
-        h4{
+
+        h4 {
             font-size: 38px;
         }
+
         .whatsapp h3 {
             font-size: 48px;
             line-height: 1.3;
         }
     }
+
     .footer__logo__section {
         min-height: 50vh !important;
     }
@@ -820,12 +873,13 @@
         width: 100%;
         height: 100vh;
     }
-    
-    
+
+
     .col-tab-12 {
         flex: 0 0 auto;
         width: 100%;
     }
+
     .col-tab-6 {
         flex: 0 0 auto;
         width: 50%;
@@ -877,6 +931,7 @@
             margin-bottom: 40px;
             padding-top: 0px;
         }
+
         .eco__friendly {
             overflow: hidden;
 
@@ -923,7 +978,7 @@
 
         .product__descriptions {
             .product__items {
-             
+
 
                 .product__details {
                     padding-left: 0;
@@ -965,7 +1020,7 @@
 
         h2 {
             font-size: 445px;
-            line-height: 1.4;
+            line-height: 1.3;
         }
 
         h5 {
@@ -992,26 +1047,30 @@
                 font-size: 30px;
                 font-style: normal;
                 font-weight: 300;
-                line-height: 1.4;
+                line-height: 1.3;
                 letter-spacing: -1.055px;
                 padding: 43px;
             }
         }
     }
+
     .wuudply__gallery .gallery__grid img {
         width: 100%;
         height: 310px;
         object-fit: cover;
         border-radius: 12px;
     }
-    .wuudply__contact{
-        h2{
+
+    .wuudply__contact {
+        h2 {
             font-size: 70px;
-    padding-bottom: 40px;
+            padding-bottom: 40px;
         }
-        h4{
+
+        h4 {
             font-size: 38px;
         }
+
         .whatsapp h3 {
             font-size: 48px;
             line-height: 1.3;

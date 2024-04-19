@@ -7,10 +7,10 @@ import Aos from 'aos';
 
 export default function Doors() {
   const [swiper, setSwiper] = useState(null);
-  const [currentSlide, setCurrentSlide] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const plyWoodData = [
     {
-      top_title: 'WUUDBOARD FLUSH DOORS',
+      top_title: 'FLUSH DOORS',
       image: 'assets/img/products/doors/1.jpg',
       title: '(IS2202)',
       sub_title: 'LIFETIME GUARANTEE',
@@ -64,23 +64,32 @@ export default function Doors() {
   useEffect(function () {
     Aos.init({ duration: 2000 });
   }, []);
-  const goNext = () => {
-    if (swiper !== null) {
-      swiper.slideNext();
-    }
-  };
   const goPrev = () => {
     if (swiper !== null) {
       swiper.slidePrev();
+      if(currentIndex > 0){
+        setCurrentIndex(currentIndex - 1);
+      }
+    }
+  };
+
+  const goNext = () => {
+    if (swiper !== null) {
+      swiper.slideNext();
+      if(currentIndex < plyWoodData.length){
+        setCurrentIndex(currentIndex + 1);
+      }
+     
     }
   };
   return (
     <div className='product__items'>
       <div className="navigation">
-        <button className='arrow-btn' onClick={goPrev}><img src="assets/img/products/arrow.svg" style={{rotate:'180deg'}} alt="" /></button>
-        <button className='arrow-btn' onClick={goNext}><img src="assets/img/products/arrow.svg" alt="" /></button>
+      <button className={`arrow-btn ${currentIndex === 0 ? 'disabled' : ''}`} onClick={goPrev}><img src="assets/img/products/arrow.svg" style={{rotate:'180deg'}} alt="" /></button>
+        <button className={`arrow-btn ${currentIndex === plyWoodData.length ? 'disabled' : ''}`} onClick={goNext}><img src="assets/img/products/arrow.svg" alt="" /></button>
       </div>
       <Swiper
+      autoHeight={true}
         onSwiper={(s) => {
           setSwiper(s);
         }}
@@ -90,8 +99,8 @@ export default function Doors() {
           plyWoodData?.map((ele, i) => {
             return (
               <SwiperSlide key={i} >
-                <div className="row align-items-center" data-aos="fade-in">
-                  <div className="col-md-12">
+                <>
+                <div className="col-md-12">
                     <div className="product__header">
                       <div className="product__logo">
                         <img src="assets/img/logo.svg" alt="" />
@@ -100,6 +109,7 @@ export default function Doors() {
 
                     </div>
                   </div>
+                  <div className="row align-items-center sm-reverse" data-aos="fade-in">
                   <div className="col-md-6">
                     <div className="product__image">
                       <img src={ele.image} className='w-100' alt="" />
@@ -116,6 +126,8 @@ export default function Doors() {
                     </div>
                   </div>
                 </div>
+                </>
+
               </SwiperSlide>
             )
           })

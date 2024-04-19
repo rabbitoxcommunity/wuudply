@@ -9,6 +9,7 @@ import Footer from './components/footer/Footer';
 import Home from './pages/Home';
 import ScrollTop from './components/ScrollTop';
 import './responsive.scss';
+import { ToastContainer } from 'react-toastify';
 function App() {
   return (
     <>
@@ -17,6 +18,18 @@ function App() {
       <Header />
         <RouteHandler />
       <Footer />
+      <ToastContainer
+                                    position="bottom-right"
+                                    autoClose={5000}
+                                    hideProgressBar={false}
+                                    newestOnTop={false}
+                                    closeOnClick
+                                    rtl={false}
+                                    pauseOnFocusLoss
+                                    draggable
+                                    pauseOnHover
+                                    theme="light"
+                                />
 
     </>
 

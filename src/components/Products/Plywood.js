@@ -7,7 +7,7 @@ import Aos from 'aos';
 
 export default function Plywood() {
   const [swiper, setSwiper] = useState(null);
-  const [currentSlide, setCurrentSlide] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const plyWoodData = [
     {
       top_title: '101',
@@ -338,23 +338,33 @@ export default function Plywood() {
   useEffect(function () {
     Aos.init({ duration: 2000 });
   }, []);
-  const goNext = () => {
-    if (swiper !== null) {
-      swiper.slideNext();
-    }
-  };
   const goPrev = () => {
     if (swiper !== null) {
       swiper.slidePrev();
+      if(currentIndex > 0){
+        setCurrentIndex(currentIndex - 1);
+      }
     }
   };
+
+  const goNext = () => {
+    if (swiper !== null) {
+      swiper.slideNext();
+      if(currentIndex < plyWoodData.length){
+        setCurrentIndex(currentIndex + 1);
+      }
+     
+    }
+  };
+
   return (
     <div className='product__items'>
       <div className="navigation">
-        <button className='arrow-btn' onClick={goPrev}><img src="assets/img/products/arrow.svg" style={{rotate:'180deg'}} alt="" /></button>
-        <button className='arrow-btn' onClick={goNext}><img src="assets/img/products/arrow.svg" alt="" /></button>
+        <button className={`arrow-btn ${currentIndex === 0 ? 'disabled' : ''}`} onClick={goPrev}><img src="assets/img/products/arrow.svg" style={{rotate:'180deg'}} alt="" /></button>
+        <button className={`arrow-btn ${currentIndex === plyWoodData.length ? 'disabled' : ''}`} onClick={goNext}><img src="assets/img/products/arrow.svg" alt="" /></button>
       </div>
       <Swiper
+      autoHeight={true}
         onSwiper={(s) => {
           setSwiper(s);
         }}
@@ -364,8 +374,8 @@ export default function Plywood() {
           plyWoodData?.map((ele, i) => {
             return (
               <SwiperSlide key={i} >
-                <div className="row align-items-center" data-aos="fade-up">
-                  <div className="col-md-12">
+                <>
+                <div className="col-md-12">
                     <div className="product__header">
                       <div className="product__logo">
                         <img src="assets/img/logo.svg" alt="" />
@@ -374,6 +384,7 @@ export default function Plywood() {
 
                     </div>
                   </div>
+                  <div className="row align-items-center sm-reverse" data-aos="fade-up">
                   <div className="col-md-6">
                     <div className="product__image">
                       <img src={ele.image} className='w-100' alt="" />
@@ -390,6 +401,8 @@ export default function Plywood() {
                     </div>
                   </div>
                 </div>
+                </>
+
               </SwiperSlide>
             )
           })

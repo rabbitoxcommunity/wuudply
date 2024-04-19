@@ -3,46 +3,24 @@ import emailjs from '@emailjs/browser';
 import InnerBanner from '../components/InnerBanner/InnerBanner'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Alert, Spinner } from 'react-bootstrap';
+import { useForm } from 'react-hook-form';
 
 function Contact() {
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+        reset,
+    } = useForm()
     const form = useRef();
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        phone: '',
-        message: ''
-    });
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-    const isValidEmail = (email) => {
-        // Simple email validation using regex
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(email);
-    };
-    const sendEmail = (e) => {
-        e.preventDefault();
-         // Validation
-         if (formData.name === '') {
-            toast.error('Please enter your name');
-            return;
-        }
-        if (formData.email === '') {
-            toast.error('Please enter your email');
-            return;
-        }
-        if (!isValidEmail(formData.email)) {
-            toast.error('Please enter a valid email');
-            return;
-        }
-        if (formData.phone === '') {
-            toast.error('Please enter your phone number');
-            return;
-        }
-        if (formData.message === '') {
-            toast.error('Please enter your comments');
-            return;
-        }
+    const [success, setSuccess] = useState(false)
+    const [loading, setLoading] = useState(false)
+
+
+    const onSubmit = (data) => {
+        console.log(form.current)
+        setLoading(true);
 
         emailjs
             .sendForm('service_ecwlxqg', 'template_w8r6f35', form.current, {
@@ -50,15 +28,23 @@ function Contact() {
             })
             .then(
                 () => {
-                    toast.success("Thank you for getting in touch!", { position: "bottom-right" });
-                    e.target.reset();
+                    reset();
+                    setSuccess(true);
+                    setLoading(false);
+                    // Reset success after 3 seconds
+                    setTimeout(() => {
+                        setSuccess(false);
+                    }, 3000);
                 },
                 (error) => {
+                    setLoading(false);
                     toast.error("Please check your form", { position: "bottom-right" });
                 },
             );
-   
+
+
     };
+
     return (
         <div className='innerpage wuudply__contact'>
 
@@ -71,25 +57,34 @@ function Contact() {
                             <h4 data-aos="fade-up" data-aos-duration="1500">We’re always happy to hear from customers, partners, and distributors.</h4>
                         </div>
                         <div className="col-md-6">
-                            <form ref={form} onSubmit={sendEmail} data-aos="fade-up" data-aos-duration="3000">
+                            <form ref={form} onSubmit={handleSubmit(onSubmit)} data-aos="fade-up" data-aos-duration="3000">
                                 <div className="form-group">
                                     <label htmlFor="name">Name</label>
-                                    <input type="text" className="form-control" name='name' onChange={handleChange} />
+                                    <input type="text" className="form-control" name='name' {...register("name", { required: true })} />
+                                    {errors.name && <span>Please enter valid email</span>}
+
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="Email">Email</label>
-                                    <input type="text" className="form-control" name='email' onChange={handleChange}  />
+                                    <input type="text" className="form-control" name='email' {...register("email", { required: "This field is required",pattern: {value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,message: "Please enter a valid email"}})} />
+                                   {errors.email && <span>{errors.email.message}</span>}
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="Phone">Phone</label>
-                                    <input type="text" className="form-control" name='phone' onChange={handleChange} />
+                                    <input type="number" className="form-control" name='phone' {...register("phone", { required: "This field is required",pattern: {value: /^\+?(91)?([6-9]{1})([0-9]{9})$/ ,message: "Please enter a valid phone number"}})} />
+                                    {errors.phone && <span>{errors.phone.message}</span>}
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="Message">Message</label>
-                                    <textarea className="form-control" cols="30" rows="6" name='message' onChange={handleChange}></textarea>
+                                    <textarea className="form-control" cols="30" name='message' rows="6" {...register("message", { required: true })}></textarea>
+                                    {errors.message && <span>This field is required</span>}
                                 </div>
-                                <button type="submit" className="btn btn-primary">Submit</button>
-                                <ToastContainer />
+                                {
+                                    success && <Alert key={'success'} variant={'success'} className='mb-3'>Thank you for getting in touch!</Alert>
+                                }
+                                <button type="submit" className="btn btn-primary d-flex align-items-center">Submit {loading && <Spinner style={{ height: '13px', width: '13px', marginLeft: '5px' }} animation="grow" />}</button>
+
+
                             </form>
                         </div>
                     </div>

@@ -73,8 +73,8 @@ export default function Decorative() {
           plyWoodData?.map((ele, i) => {
             return (
               <SwiperSlide key={i} >
-                <div className="row" data-aos="fade-in">
-                  <div className="col-md-12">
+                <>
+                <div className="col-md-12">
                     <div className="product__header">
                       <div className="product__logo">
                         <img src="assets/img/logo.svg" alt="" />
@@ -83,6 +83,7 @@ export default function Decorative() {
 
                     </div>
                   </div>
+                  <div className="row sm-reverse" data-aos="fade-in">
                   <div className="col-md-6">
                     <div className="product__image">
                       <img src={ele.image} className='w-100' alt="" />
@@ -100,6 +101,8 @@ export default function Decorative() {
                     </div>
                   </div>
                 </div>
+                </>
+               
               </SwiperSlide>
             )
           })
