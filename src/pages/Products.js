@@ -11,7 +11,7 @@ export default function Products() {
     const [tabs, setTabs] = useState(state ? state?.setTab : 'plywood')
     return (
         <div className='innerpage wuudly__products'>
-            <InnerBanner image={'assets/img/products.jpg'} title='Wuudply Products' />
+            <InnerBanner image={'assets/img/products.jpg'} title='primeply Products' />
             <div className="products__tabs">
                 <div className="container">
                     <div className="tab__products">

@@ -13,7 +13,7 @@ export default function Decorative() {
       image: 'assets/img/kraft.jpg',
       title: 'Decorative veneers',
       sub_title: '15 YEARS GUARANTEE',
-      desc: 'One of the founding product, Wuudply Kraft Decorative Veneers, tailored to customer preferences at competitive prices. Ideal for pasting onto plywood/boards for a natural wood finish or polishing for a luxurious look. Continuously evolving to meet market demands, inquire about our latest offerings.',
+      desc: 'One of the founding product, primeply Kraft Decorative Veneers, tailored to customer preferences at competitive prices. Ideal for pasting onto plywood/boards for a natural wood finish or polishing for a luxurious look. Continuously evolving to meet market demands, inquire about our latest offerings.',
       table_title: 'Technical Specification',
       table: <Table hover>
       <tbody>

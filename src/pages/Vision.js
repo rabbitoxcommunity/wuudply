@@ -8,12 +8,12 @@ export default function Vision() {
             <div className="container">
                 <div className="row">
                     <div className="col-md-9">
-                        <h4 data-aos="fade-up" data-aos-duration="1000">At Wuudply, our legacy is shaped by a team of highly skilled craftsmen dedicated to crafting the world's finest products.</h4>
+                        <h4 data-aos="fade-up" data-aos-duration="1000">At primeply, our legacy is shaped by a team of highly skilled craftsmen dedicated to crafting the world's finest products.</h4>
                         <h2 data-aos="fade-up" data-aos-duration="1500">Vision</h2>
                     </div>
                 </div>
                 <div className="offset-md-5">
-                    <h5 data-aos="fade-up" data-aos-duration="2000">Our vision is to exceed industry norms, bringing fresh possibilities in plywood. We achieve this through careful planning and precise execution at every step. Wuudply is synonymous with quality, reflecting strength and durability in all our products. Our journey continues, as we set our sights on achieving new milestones and scaling greater heights of success.</h5>
+                    <h5 data-aos="fade-up" data-aos-duration="2000">Our vision is to exceed industry norms, bringing fresh possibilities in plywood. We achieve this through careful planning and precise execution at every step. primeply is synonymous with quality, reflecting strength and durability in all our products. Our journey continues, as we set our sights on achieving new milestones and scaling greater heights of success.</h5>
                 </div>
 
             </div>
@@ -28,7 +28,7 @@ export default function Vision() {
                     <h4 data-aos="fade-up" data-aos-duration="2000">These principles drive us to consistently deliver the finest products and solutions to our clients. Our track record speaks for itself, fostering strong, mutually beneficial relationships across South India. We firmly believe that a satisfied customer is invaluable, transcending mere profit margins. To all our dealers, we extend our  heartfelt gratitude. Their unwavering support has propelled us to achieve remarkable milestones. Customer feedback is invaluable, guiding us towards continuous improvement and eventual perfection.</h4>
                     <div className="director">
                         <h5>Haneefa Thotton</h5>
-                        <span>Director - Wuudply</span>
+                        <span>Director - primeply</span>
                     </div>
                 </div>
                 </div>

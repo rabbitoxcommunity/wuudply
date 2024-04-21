@@ -15,7 +15,7 @@ export default function About() {
           <h5 data-aos="fade-up" data-aos-duration="1000">
             We are well-known for our expertise in crafting high-quality gurjan wood and related products. Our range includes plywood, flush doors, block boards, and decorative veneers, suitable for both homes and offices. We carefully source logs and veneers from Myanmar, prioritizing Gurjan wood for its excellent resistance to borers and termites. Each product undergoes a thorough 5-step process to ensure durability.
           </h5>
-          <h5 data-aos="fade-up" data-aos-duration="1500">Our flagship product, Wuudply plywood, is made from 100% Gurjan timber, ensuring exceptional stability and a guarantee against warping. As pioneers in India, Primeply Industries. was the
+          <h5 data-aos="fade-up" data-aos-duration="1500">Our flagship product, primeply plywood, is made from 100% Gurjan timber, ensuring exceptional stability and a guarantee against warping. As pioneers in India, Primeply Industries. was the
             first to offer plywood with Gurjan core veneers, demonstrating our dedication to quality and innovation in the industry.</h5>
         </div>
         <div className="col-md-12">

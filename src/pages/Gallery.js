@@ -4,7 +4,7 @@ import Fancybox from '../components/Fancybox'
 
 export default function Gallery() {
     return (
-        <div className='innerpage wuudply__gallery'>
+        <div className='innerpage primeply__gallery'>
             <InnerBanner image={'assets/img/gallery.jpg'} title='Gallery' />
             <section>
                 <div className="container">

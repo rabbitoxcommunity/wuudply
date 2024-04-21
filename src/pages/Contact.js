@@ -46,7 +46,7 @@ function Contact() {
     };
 
     return (
-        <div className='innerpage wuudply__contact'>
+        <div className='innerpage primeply__contact'>
 
             <InnerBanner image={'assets/img/contact.jpg'} title='Contact' />
             <section className='pb-0'>
@@ -92,7 +92,7 @@ function Contact() {
 
                 <div className="whatsapp">
                     <div className="container">
-                        <h3><a data-aos="fade-up" data-aos-duration="1500" href="https://wa.me/+919895112233" target='_blank'><span>Whatsapp :</span> +91 9895 112 233</a> <br /> <a target='_blank' data-aos="fade-up" data-aos-duration="2000" href="mailto:Info@wuudply.in"><span>Email :</span > Info@wuudply.in</a></h3>
+                        <h3><a data-aos="fade-up" data-aos-duration="1500" href="https://wa.me/+919895112233" target='_blank'><span>Whatsapp :</span> +91 9895 112 233</a> <br /> <a target='_blank' data-aos="fade-up" data-aos-duration="2000" href="mailto:Info@primeply.in"><span>Email :</span > Info@primeply.in</a></h3>
                     </div>
                 </div>
             </section>
