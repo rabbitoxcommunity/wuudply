@@ -113,7 +113,7 @@
 
         .footer__bottom {
             .footer__logo__section h2 {
-                font-size: 40px;
+                font-size: 38px;
                 line-height: 1.2;
             }
         }
@@ -208,7 +208,7 @@
                 -webkit-overflow-scrolling: touch;
 
                 .productGrid {
-                    padding: 10px;
+                    padding: 8px;
 
                     .title {
                         font-size: 18px;
@@ -250,6 +250,13 @@
         .product__items .navigation {
             top: -1% !important;
             background-color: #fff;
+            right: -30px !important;
+            .arrow-btn{
+                padding: 0;
+                &:first-child{
+                    padding-right: 5px;
+                }
+            }
         }
 
         .product__image {

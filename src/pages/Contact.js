@@ -61,23 +61,23 @@ function Contact() {
                                 <div className="form-group">
                                     <label htmlFor="name">Name</label>
                                     <input type="text" className="form-control" name='name' {...register("name", { required: true })} />
-                                    {errors.name && <span>Please enter valid email</span>}
+                                    {errors.name && <span>Please enter name</span>}
 
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="Email">Email</label>
-                                    <input type="text" className="form-control" name='email' {...register("email", { required: "This field is required",pattern: {value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,message: "Please enter a valid email"}})} />
+                                    <input type="text" className="form-control" name='email' {...register("email", { required: "Please enter email",pattern: {value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,message: "Please enter a valid email"}})} />
                                    {errors.email && <span>{errors.email.message}</span>}
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="Phone">Phone</label>
-                                    <input type="number" className="form-control" name='phone' {...register("phone", { required: "This field is required",pattern: {value: /^\+?(91)?([6-9]{1})([0-9]{9})$/ ,message: "Please enter a valid phone number"}})} />
+                                    <input type="text" className="form-control" name='phone' {...register("phone", { required: "Please enter phone number",pattern: {value: /^\+?(91)?([6-9]{1})([0-9]{9})$/ ,message: "Please enter a valid phone number"}})} />
                                     {errors.phone && <span>{errors.phone.message}</span>}
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="Message">Message</label>
                                     <textarea className="form-control" cols="30" name='message' rows="6" {...register("message", { required: true })}></textarea>
-                                    {errors.message && <span>This field is required</span>}
+                                    {errors.message && <span>Please enter message</span>}
                                 </div>
                                 {
                                     success && <Alert key={'success'} variant={'success'} className='mb-3'>Thank you for getting in touch!</Alert>
