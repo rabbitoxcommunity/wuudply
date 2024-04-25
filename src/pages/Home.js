@@ -14,7 +14,7 @@ export default function Home() {
           <source src="assets/videos/banner.mp4" type="video/mp4" />
         </video>
         <div className="banner__content">
-          <h1 data-aos="fade-in">Quality Beyond Guarantee</h1>
+          <h1 data-aos="fade-in" data-aos-duration="5000">Quality Beyond Guarantee</h1>
         </div>
       </section>
       <section className="wuudply__about">
