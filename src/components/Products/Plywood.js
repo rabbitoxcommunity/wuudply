@@ -350,7 +350,7 @@ export default function Plywood() {
   const goNext = () => {
     if (swiper !== null) {
       swiper.slideNext();
-      if(currentIndex < plyWoodData.length){
+      if(currentIndex < plyWoodData.length -1){
         setCurrentIndex(currentIndex + 1);
       }
      
@@ -361,7 +361,7 @@ export default function Plywood() {
     <div className='product__items'>
       <div className="navigation">
         <button className={`arrow-btn ${currentIndex === 0 ? 'disabled' : ''}`} onClick={goPrev}><img src="assets/img/products/arrow.svg" style={{rotate:'180deg'}} alt="" /></button>
-        <button className={`arrow-btn ${currentIndex === plyWoodData.length ? 'disabled' : ''}`} onClick={goNext}><img src="assets/img/products/arrow.svg" alt="" /></button>
+        <button className={`arrow-btn ${currentIndex === plyWoodData.length -1 ? 'disabled' : ''}`} onClick={goNext}><img src="assets/img/products/arrow.svg" alt="" /></button>
       </div>
       <Swiper
       autoHeight={true}
