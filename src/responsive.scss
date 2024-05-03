@@ -1,8 +1,8 @@
 @media only screen and (max-width: 600px) {
 
-    .container {
-        width: 90% !important;
-    }
+    // .container {
+    //     width: 90% !important;
+    // }
 
     .menu__items {
         ul {
@@ -23,13 +23,26 @@
         letter-spacing: -0.3px;
         padding-bottom: 10px;
     }
+    p, li, a{
+        // font-weight: 400 !important;
+        letter-spacing: -0.722px !important;
+    }
 
     .sm-reverse {
         flex-direction: column-reverse;
     }
 
+    .sm-w-100 {
+        width: 100%;
+    }
+
+    .sm-p-reverse {
+        padding-right: calc(1.5rem * .5) !important;
+        padding-left: calc(1.5rem * .5) !important;
+    }
+
     section {
-        padding: 40px 0;
+        padding: 40px 0 !important;
     }
 
     h3 {
@@ -40,9 +53,197 @@
         font-size: 25px;
     }
 
-    .main__header .header .navbar .menu-toggle {
-        width: 35px;
-        height: 15px;
+    .primeply__banner.main__banner {
+        height: 80vh;
+
+        .banner__content {
+            left: 0;
+        }
+    }
+
+
+    .primeply__bestselling {
+        .imgGrid {
+            width: 100%;
+
+            &:first-child {
+                margin: 0;
+            }
+
+            &:last-child .card {
+                left: 5%;
+                right: inherit;
+            }
+
+            .card {
+                min-width: 80%;
+                left: 5%;
+                width: 90%;
+                padding: 30px 20px 40px 20px;
+
+                h2 {
+                    font-size: 38px;
+                    font-style: normal;
+                    line-height: 58.726px;
+                    letter-spacing: -1.44px;
+                }
+
+                p {
+                    font-size: 22px;
+                    font-weight: 300 !important;
+                    line-height: 27.2px;
+                    letter-spacing: -0.36px;
+
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .primeply__footer {
+        .footer__logo__section {
+            min-height: 60vh !important;
+        }
+
+        .footer__logo {
+            img {
+                width: 100% !important;
+            }
+        }
+    }
+
+    section.getStarted {
+        height: 80vh;
+
+        .header img {
+            height: 70px;
+        }
+
+        .main__banner {
+            padding-top: 80%;
+
+            h1 {
+                font-size: 47px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 48.01px;
+                text-align: center;
+                letter-spacing: -1.62px;
+            }
+        }
+    }
+
+    .our__brands {
+        h6 {
+            font-size: 19px;
+            padding-bottom: 5px;
+        }
+
+        h2 {
+            font-size: 32px;
+            line-height: 36.823px;
+            letter-spacing: -0.648px;
+            margin-bottom: 40px;
+        }
+
+        .brand__image {
+            border-radius: 30px;
+            height: 340px;
+            gap: 30px;
+        }
+    }
+
+    .guarantee {
+        .overlay {
+            width: 50%;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 33.804px;
+            letter-spacing: -0.648px;
+            padding-bottom: 30px;
+        }
+
+        p {
+            font-size: 19px;
+            // line-height: 24.314px;
+            font-weight: 400;
+            letter-spacing: -0.722px;
+        }
+    }
+
+    .milestones {
+        .title {
+            padding-bottom: 0;
+
+            h2 {
+                font-size: 36px;
+                font-weight: 600;
+                line-height: 33.804px;
+                letter-spacing: -0.648px;
+                padding-bottom: 30px;
+            }
+        }
+
+        .scroll__bar .milesGrid {
+            width: 80%;
+            min-height: 200px;
+            margin-right: 20px;
+            padding: 40px;
+
+            h2 {
+                font-size: 43px;
+                font-weight: 600;
+                line-height: 33.804px;
+                letter-spacing: -0.648px;
+                padding-bottom: 20px;
+            }
+
+            p {
+                font-size: 22px;
+                line-height: 24.314px;
+                letter-spacing: -0.422px;
+            }
+        }
+    }
+
+    .footer__section {
+        p {
+            font-size: 16.253px;
+            line-height: 16.817px;
+            letter-spacing: -0.244px;
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        ul {
+            font-size: 16.253px;
+            line-height: 16.817px;
+            letter-spacing: -0.244px;
+
+            // li {
+            //     padding-right: 20px;
+            // }
+        }
+    }
+
+    .main__header {
+        .menu__lists .menu__items .logo__menu {
+            padding-top: 40%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .header .navbar .menu-toggle {
+            width: 35px;
+            height: 15px;
+        }
     }
 
     .main__header .header .navbar .menu-toggle.active .line:nth-child(1) {
@@ -54,7 +255,7 @@
     }
 
     .main__header .header .logo img {
-        width: 180px;
+        width: 100px;
     }
 
     .main__header .menu__lists .menu__items ul li {
@@ -67,15 +268,40 @@
 
         h1 {
             font-size: 45px;
+            line-height: 45.345px;
+            /* 95.399% */
+            letter-spacing: -1.426px;
         }
     }
 
-    .primeply__about .about__content h4 {
-        margin-bottom: 25px;
+
+    .primeply__about {
+        text-align: left;
+
+        .about__content h4 {
+            margin-bottom: 25px;
+            text-align: left;
+            br{
+                display: none !important;
+            }
+        }
     }
 
-    .primeply__featured .featured__grid .featured__content {
-        padding: 28px;
+    .primeply__featured .featured__grid {
+        .featured__img {
+            &.pb-sm-2 {
+                padding-bottom: 1rem !important;
+            }
+
+            img {
+                border-radius: 20px;
+            }
+        }
+
+        .featured__content {
+            padding: 28px;
+            padding-left: 0;
+        }
     }
 
     .primeply__featured .featured__grid {
@@ -195,6 +421,8 @@
     }
 
     .wuudly__products {
+    
+       
         .products__tabs {
             .tab__products {
                 display: -ms-flexbox !important;
@@ -230,7 +458,7 @@
             // padding-top: 50px;
 
             img {
-                width: 220px !important;
+                width: 130px !important;
                 // margin: 0 auto;
                 padding-bottom: 10px;
             }
@@ -248,12 +476,14 @@
         }
 
         .product__items .navigation {
-            top: -1% !important;
+            top: 1% !important;
             background-color: #fff;
-            right: -30px !important;
-            .arrow-btn{
+            right: 0px !important;
+
+            .arrow-btn {
                 padding: 0;
-                &:first-child{
+
+                &:first-child {
                     padding-right: 5px;
                 }
             }
@@ -303,6 +533,12 @@
 
         h2 {
             font-size: 130px;
+            line-height: 126px;
+            letter-spacing: -6px;
+            padding-bottom: 20px;
+        }
+        h2.mission {
+            font-size: 110px;
             line-height: 126px;
             letter-spacing: -6px;
             padding-bottom: 20px;
@@ -457,6 +693,174 @@
     h4 {
         font-size: 35px;
     }
+    .col-9.sm-w-100 {
+        width: 100%;
+    }
+    .primeply__bestselling .imgGrid{
+        &:last-child .card {
+            left: 5%;
+            right: auto;
+        }
+        height: 60vh;
+    }
+    .primeply__banner {
+        height: 80vh;
+        background-repeat: no-repeat;
+        width: 100%;
+        object-fit: cover;
+        background-size: cover;
+        .banner__content {
+            top: 60%;
+            h1 {
+                font-size: 120px;
+                font-weight: 500;
+                line-height: 125px;
+            }
+        }
+    }
+
+    section.getStarted {
+        height: 70vh;
+
+        .header img {
+            height: 100px;
+        }
+
+        .main__banner {
+            padding-top: 30%;
+
+            h1 {
+                font-size: 90px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 90px;
+                text-align: center;
+                letter-spacing: -1.62px;
+            }
+        }
+    }
+
+    .our__brands {
+        padding-top: 0;
+
+        h6 {
+            font-size: 36px;
+            padding-bottom: 34px;
+
+        }
+
+        h2 {
+            font-size: 52px;
+            line-height: 55px;
+            letter-spacing: -0.648px;
+            margin-bottom: 40px;
+
+        }
+
+        .brand__image {
+            border-radius: 30px;
+            height: 421px;
+            gap: 35px;
+        }
+    }
+
+    .guarantee {
+        .overlay {
+            width: 75%;
+        }
+
+        h2 {
+            font-size: 74px;
+            font-weight: 600;
+            line-height: 75px;
+            letter-spacing: -0.648px;
+            padding-bottom: 30px;
+
+        }
+
+        p {
+            font-size: 26px;
+            line-height: 32px;
+            letter-spacing: -0.422px;
+        }
+    }
+
+    .milestones {
+        .title {
+            padding-bottom: 0;
+
+            h2 {
+                font-size: 52px;
+                font-weight: 600;
+                line-height: 33.804px;
+                letter-spacing: -0.648px;
+                padding-bottom: 50px;
+            }
+        }
+
+        .scroll__bar {
+            padding-bottom: 80px;
+        }
+
+        .scroll__bar .milesGrid {
+            width: 44%;
+            min-height: 264px;
+            margin-right: 20px;
+            padding: 58px;
+
+            h2 {
+                font-size: 56px;
+                font-weight: 600;
+                line-height: 33.804px;
+                letter-spacing: -0.648px;
+                padding-bottom: 20px;
+            }
+
+            p {
+                font-size: 32px;
+                line-height: 35px;
+                letter-spacing: -0.422px;
+            }
+        }
+    }
+
+    .footer__section {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+
+        p {
+            font-size: 16.253px;
+            line-height: 16.817px;
+            letter-spacing: -0.244px;
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        ul {
+            font-size: 16.253px;
+            line-height: 16.817px;
+            letter-spacing: -0.244px;
+
+            li {
+                padding-right: 20px;
+            }
+        }
+    }
+
+    footer.getstarted__footer {
+        position: relative;
+        min-height: 160px;
+
+        svg {
+            position: absolute;
+            /* top: 0; */
+            left: 0;
+            bottom: 38%;
+            width: 100%;
+        }
+    }
 
     .primeply__featured {
         .featured__grid {
@@ -466,7 +870,7 @@
                 padding: 42px;
 
                 h5 {
-                    font-size: 22px;
+                    font-size: 28px;
                 }
             }
 
@@ -592,6 +996,10 @@
             font-size: 365px;
             line-height: 1.3;
         }
+        h2.mission {
+            font-size: 300px;
+            line-height: 1.3;
+        }
 
         h5 {
             padding-bottom: 0;
@@ -656,6 +1064,7 @@
 /* TABLET */
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+
     .col-tab-12 {
         flex: 0 0 auto;
         width: 100%;
@@ -678,12 +1087,179 @@
         font-size: 35px;
     }
 
+    section.getStarted {
+        height: 80vh;
+
+        .header img {
+            height: 100px;
+        }
+
+        .main__banner {
+            padding-top: 30%;
+
+            h1 {
+                font-size: 85px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 88.01px;
+                text-align: center;
+                letter-spacing: -1.62px;
+            }
+        }
+    }
+
+    .our__brands {
+        padding-top: 0;
+
+        h6 {
+            font-size: 30px;
+            padding-bottom: 20px;
+            padding-top: 30px;
+
+        }
+
+        h2 {
+            font-size: 40px;
+            line-height: 43px;
+            letter-spacing: -0.648px;
+            margin-bottom: 40px;
+
+        }
+
+        .brand__image {
+            border-radius: 30px;
+            height: 250px;
+            gap: 20px;
+        }
+    }
+
+    .guarantee {
+        .overlay {
+            width: 75%;
+        }
+
+        h2 {
+            font-size: 56px;
+            font-weight: 600;
+            line-height: 55.804px;
+            letter-spacing: -0.648px;
+            padding-bottom: 30px;
+        }
+
+        p {
+            font-size: 22px;
+            line-height: 26.314px;
+            letter-spacing: -0.422px;
+        }
+    }
+
+    .col-9.sm-w-100 {
+        width: 100%;
+    }
+    .primeply__bestselling .imgGrid{
+        &:last-child .card {
+            left: 5%;
+            right: auto;
+        }
+        height: 80vh;
+    }
+    .primeply__banner {
+        height: 80vh;
+        background-repeat: no-repeat;
+        width: 100%;
+        object-fit: cover;
+        background-size: cover;
+        .banner__content {
+            top: 60%;
+            h1 {
+                font-size: 100px;
+                font-weight: 500;
+                line-height: 100px;
+            }
+        }
+    }
+
+    .milestones {
+        .title {
+            padding-bottom: 0;
+
+            h2 {
+                font-size: 36px;
+                font-weight: 600;
+                line-height: 33.804px;
+                letter-spacing: -0.648px;
+                padding-bottom: 30px;
+            }
+        }
+
+        .scroll__bar .milesGrid {
+            width: 44%;
+            min-height: 200px;
+            margin-right: 20px;
+            padding: 40px;
+
+            h2 {
+                font-size: 43px;
+                font-weight: 600;
+                line-height: 33.804px;
+                letter-spacing: -0.648px;
+                padding-bottom: 20px;
+            }
+
+            p {
+                font-size: 22px;
+                line-height: 24.314px;
+                letter-spacing: -0.422px;
+            }
+        }
+    }
+
+    .footer__section {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+
+        p {
+            font-size: 16.253px;
+            line-height: 16.817px;
+            letter-spacing: -0.244px;
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        ul {
+            font-size: 16.253px;
+            line-height: 16.817px;
+            letter-spacing: -0.244px;
+
+            li {
+                padding-right: 20px;
+            }
+        }
+    }
+
+    footer.getstarted__footer {
+        position: relative;
+        min-height: 160px;
+
+        svg {
+            position: absolute;
+            /* top: 0; */
+            left: 0;
+            bottom: 38%;
+            width: 100%;
+        }
+    }
+
+
+
     .primeply__featured {
         .featured__grid {
             overflow: hidden;
 
             .featured__content {
-                padding: 42px;
+                padding: 25px;
 
                 h5 {
                     font-size: 22px;
@@ -812,6 +1388,10 @@
             font-size: 280px;
             line-height: 1.3;
         }
+        h2.mission {
+            font-size: 225px;
+            line-height: 1.3;
+        }
 
         h5 {
             padding-bottom: 0;
@@ -868,7 +1448,11 @@
     }
 
     .footer__logo__section {
-        min-height: 50vh !important;
+        min-height: 60vh !important;
+    }
+    .main__header .menu__lists .menu__items .logo__menu img {
+        width: 100%;
+        padding-top: 30%;
     }
 }
 
@@ -899,6 +1483,12 @@
 
     h4 {
         font-size: 35px;
+    }
+
+    .primeply__banner .banner__content h1 {
+        font-size: 150.574px;
+        line-height: 144.185px;
+        letter-spacing: -4.817px;
     }
 
     .primeply__featured {
@@ -1084,5 +1674,45 @@
         }
     }
 
+    section.getStarted .main__banner h1 {
+        color: #000;
+        text-align: center;
+        font-size: 132px;
+        font-weight: 700;
+        line-height: 132px;
+        letter-spacing: -4.8px;
+        text-align: center;
+    }
 
+    .our__brands h2 {
+        font-size: 62px;
+        font-weight: 600;
+        line-height: 69.569px;
+        letter-spacing: -1.11px;
+    }
+
+    .guarantee h2 {
+        font-size: 99px;
+        font-weight: 700;
+        line-height: 100px;
+        letter-spacing: -5.655px;
+        padding-bottom: 70px;
+    }
+
+    .milestones .scroll__bar .milesGrid p {
+        font-size: 35px;
+        line-height: 42.946px;
+        letter-spacing: -0.63px;
+    }
+    .wuudly__vision h2.mission{
+        font-size: 360px !important;
+    }
+
+}
+
+@media only screen and (min-width: 1400px){
+    .about__content {
+        width: 90%;
+        margin: 0 auto;
+    }
 }

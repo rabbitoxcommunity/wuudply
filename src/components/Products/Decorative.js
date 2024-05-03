@@ -9,7 +9,7 @@ export default function Decorative() {
   const [currentSlide, setCurrentSlide] = useState(false);
   const plyWoodData = [
     {
-      top_title: 'KRAFT',
+      top_title: 'PRIME VENEERS',
       image: 'assets/img/kraft.jpg',
       title: 'Decorative veneers',
       sub_title: '15 YEARS GUARANTEE',

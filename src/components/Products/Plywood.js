@@ -13,7 +13,7 @@ export default function Plywood() {
       top_title: '101',
       image: 'assets/img/products/plywood/1.jpg',
       title: 'Fire Retardant (IS5509) & Marine Grade (IS710)',
-      sub_title: 'LIFETIME GUARANTEE',
+      sub_title: '20 YEARS GUARANTEE',
       desc: 'Fire and Water resistant Made of tropical hardwood Best for kitchens and bathrooms',
       table_title: 'Technical Specification',
       table: <Table hover>
@@ -46,7 +46,7 @@ export default function Plywood() {
       </Table>
     },
     {
-      top_title: 'PLATINO',
+      top_title: 'PLATINO CLUB',
       image: 'assets/img/products/plywood/2.jpg',
       title: 'Marine Grade (IS710)',
       sub_title: 'LIFETIME GUARANTEE',
@@ -82,10 +82,10 @@ export default function Plywood() {
       </Table>
     },
     {
-      top_title: 'ELITE',
+      top_title: 'GOLD',
       image: 'assets/img/products/plywood/3.jpg',
       title: 'Marine Grade (IS710)',
-      sub_title: '30 YEARS GUARANTEE',
+      sub_title: '20 YEARS GUARANTEE',
       desc: 'Made of Gurjan and tropical hardwood Bonded with Phenolic Resin 100% Borer-proof Best for industrial and kitchens applications',
       table_title: 'Technical Specification',
       table: <Table hover>
@@ -121,7 +121,7 @@ export default function Plywood() {
       top_title: 'HD',
       image: 'assets/img/products/plywood/4.jpg',
       title: 'Marine Grade (IS710)',
-      sub_title: '20 YEARS GUARANTEE',
+      sub_title: '15 YEARS GUARANTEE',
       desc: 'Nilgiri Eucalyptus core veneers Bonded with phenolic formaldehyde resin Withstands wet conditions and temperature variations. Also available in commercial UF resin',
       table_title: 'Technical Specification',
       table: <Table hover>
@@ -298,7 +298,7 @@ export default function Plywood() {
       </Table>
     },
     {
-      top_title: 'FLEXI',
+      top_title: 'FLUBBER',
       image: 'assets/img/products/plywood/9.jpg',
       title: 'Perfect Shape to Your Designs',
       sub_title: 'LIFETIME GUARANTEE',
@@ -350,7 +350,7 @@ export default function Plywood() {
   const goNext = () => {
     if (swiper !== null) {
       swiper.slideNext();
-      if(currentIndex < plyWoodData.length){
+      if(currentIndex < plyWoodData.length -1){
         setCurrentIndex(currentIndex + 1);
       }
      
@@ -361,7 +361,7 @@ export default function Plywood() {
     <div className='product__items'>
       <div className="navigation">
         <button className={`arrow-btn ${currentIndex === 0 ? 'disabled' : ''}`} onClick={goPrev}><img src="assets/img/products/arrow.svg" style={{rotate:'180deg'}} alt="" /></button>
-        <button className={`arrow-btn ${currentIndex === plyWoodData.length ? 'disabled' : ''}`} onClick={goNext}><img src="assets/img/products/arrow.svg" alt="" /></button>
+        <button className={`arrow-btn ${currentIndex === plyWoodData.length -1 ? 'disabled' : ''}`} onClick={goNext}><img src="assets/img/products/arrow.svg" alt="" /></button>
       </div>
       <Swiper
       autoHeight={true}

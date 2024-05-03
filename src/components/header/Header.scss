@@ -3,7 +3,11 @@
     transition: all 0.5s;
     z-index: 997;
     padding: 30px 0;
-
+    .logo {
+      img {
+        filter: brightness(0) invert(0) !important;
+      }
+    }
     &.bg-white {
       padding: 15px 0;
     }
@@ -37,7 +41,7 @@
 
         &.active {
           .line {
-            background-color: #000;
+            background-color: #fff;
           }
 
           .line:nth-child(1) {
@@ -59,7 +63,7 @@
       }
 
       img {
-        width: 240px;
+        width: 150px;
       }
     }
 
@@ -90,7 +94,7 @@
 
   // MENU ITEMS
   .menu__lists {
-    background-color: var(--color-primary);
+    background-color: #000;
     position: fixed;
     width: 100%;
     z-index: 99;
@@ -175,19 +179,20 @@
           text-transform: capitalize;
 
           a {
-            color: #000;
+            color: #fff;
             text-decoration: none;
           }
         }
       }
 
       .logo__menu {
-        padding-top: 100px;
+        padding-top: 0px;
         padding-bottom: 30px;
         animation: 1.5s fadeInUp;
-
+        text-align: right;
         img {
-          width: 100%;
+          width: 50%;
+          filter: brightness(0) invert(1) !important;
         }
       }
     }
@@ -214,13 +219,28 @@
       display: none;
     }
 
-    .logo.logo-home img {
-      filter: brightness(0) invert(0) !important;
-    }
+    // .logo.logo-home img {
+    //   filter: brightness(0) invert(0) !important;
+    // }
 
     .sticked {
       background: transparent;
       border: none;
+    }
+  }
+  &.show{
+    .sticked{
+      .logo {
+        img {
+          filter: brightness(0) invert(1) !important;
+        }
+      }
+      .menu-toggle .line.home-line{
+        background-color: #fff !important;
+      }
+    }
+    .header .logo img{
+      filter: brightness(0) invert(1) !important;
     }
   }
 }

@@ -9,7 +9,7 @@ function BlockBoard() {
   const [currentSlide, setCurrentSlide] = useState(false);
   const plyWoodData = [
     {
-      top_title: 'WUUDBOARD',
+      top_title: 'PRIME BOARD',
       image: 'assets/img/wuudboard.jpg',
       title: '(IS1659)',
       sub_title: '15 YEARS GUARANTEE',

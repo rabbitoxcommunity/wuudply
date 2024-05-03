@@ -23,8 +23,8 @@ function Contact() {
         setLoading(true);
 
         emailjs
-            .sendForm('service_ecwlxqg', 'template_w8r6f35', form.current, {
-                publicKey: '3XLW0uvmLxar8lvNn',
+            .sendForm('service_x3xbbpd', 'template_a5q013o', form.current, {
+                publicKey: 'U1aOWkKZmomqW8dVS',
             })
             .then(
                 () => {
@@ -92,7 +92,7 @@ function Contact() {
 
                 <div className="whatsapp">
                     <div className="container">
-                        <h3><a data-aos="fade-up" data-aos-duration="1500" href="https://wa.me/+919895112233" target='_blank'><span>Whatsapp :</span> +91 9895 112 233</a> <br /> <a target='_blank' data-aos="fade-up" data-aos-duration="2000" href="mailto:Info@primeply.in"><span>Email :</span > Info@primeply.in</a></h3>
+                        <h3><a data-aos="fade-up" data-aos-duration="1500" href="https://wa.me/+917478883333" target='_blank'><span>Whatsapp :</span> +91 7478 883 333</a> <br /> <a target='_blank' data-aos="fade-up" data-aos-duration="2000" href="mailto:Info@primeply.in"><span>Email :</span > Info@primeply.in</a></h3>
                     </div>
                 </div>
             </section>

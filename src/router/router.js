@@ -7,11 +7,14 @@ import Vision from '../pages/Vision'
 import Innovation from '../pages/Innovation'
 import Gallery from '../pages/Gallery'
 import Contact from '../pages/Contact'
+import GetStarted from '../pages/GetStarted'
 
 function RouteHandler() {
+
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<GetStarted />} />
+      <Route path="/home" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/products" element={<Products />} />
       <Route path="/vision" element={<Vision />} />
