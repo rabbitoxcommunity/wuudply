@@ -23,8 +23,8 @@ function Contact() {
         setLoading(true);
 
         emailjs
-            .sendForm('service_ecwlxqg', 'template_w8r6f35', form.current, {
-                publicKey: '3XLW0uvmLxar8lvNn',
+            .sendForm('service_x3xbbpd', 'template_a5q013o', form.current, {
+                publicKey: 'U1aOWkKZmomqW8dVS',
             })
             .then(
                 () => {
@@ -66,12 +66,12 @@ function Contact() {
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="Email">Email</label>
-                                    <input type="text" className="form-control" name='email' {...register("email", { required: "Please enter email",pattern: {value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,message: "Please enter a valid email"}})} />
-                                   {errors.email && <span>{errors.email.message}</span>}
+                                    <input type="text" className="form-control" name='email' {...register("email", { required: "Please enter email", pattern: { value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, message: "Please enter a valid email" } })} />
+                                    {errors.email && <span>{errors.email.message}</span>}
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="Phone">Phone</label>
-                                    <input type="text" className="form-control" name='phone' {...register("phone", { required: "Please enter phone number",pattern: {value: /^\+?(91)?([6-9]{1})([0-9]{9})$/ ,message: "Please enter a valid phone number"}})} />
+                                    <input type="text" className="form-control" name='phone' {...register("phone", { required: "Please enter phone number", pattern: { value: /^\+?(91)?([6-9]{1})([0-9]{9})$/, message: "Please enter a valid phone number" } })} />
                                     {errors.phone && <span>{errors.phone.message}</span>}
                                 </div>
                                 <div className="form-group">
@@ -92,7 +92,7 @@ function Contact() {
 
                 <div className="whatsapp">
                     <div className="container">
-                        <h3><a data-aos="fade-up" data-aos-duration="1500" href="https://wa.me/+919895112233" target='_blank'><span>Whatsapp :</span> +91 9895 112 233</a> <br /> <a target='_blank' data-aos="fade-up" data-aos-duration="2000" href="mailto:Info@wuudply.in"><span>Email :</span > Info@wuudply.in</a></h3>
+                        <h3><a data-aos="fade-up" data-aos-duration="1500" href="https://wa.me/+917478883333" target='_blank'><span>Whatsapp :</span> +91 7478 883 333</a> <br /> <a target='_blank' data-aos="fade-up" data-aos-duration="2000" href="mailto:Info@wuudply.in"><span>Email :</span > Info@wuudply.in</a></h3>
                     </div>
                 </div>
             </section>

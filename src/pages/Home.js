@@ -21,7 +21,7 @@ export default function Home() {
         <div className="container">
           <div className="offset-md-6 col-md-6">
             <div className="about__content" data-aos="fade-up">
-              <h4>Wuud Ply is one of the most trusted names in South India for authentic timber-based plywood  since 1986, from Primeply Industries.</h4>
+              <h4>WuudPly is one of the most trusted names in South India for authentic timber-based plywood  since 1986, from Primeply Industries.</h4>
               <Link to='/about'><button className='btn btn-secondary'>Learn More</button></Link>
             </div>
           </div>

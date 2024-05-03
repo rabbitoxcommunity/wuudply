@@ -160,14 +160,15 @@
         line-height: 41.6px;
         /* 130% */
         letter-spacing: -0.48px;
-
+        margin-bottom: 40px;
         &:first-child {
-            margin-bottom: 40px;
+            
             padding-top: 60px;
         }
 
         &:last-child {
             padding-bottom: 80px;
+            margin-bottom: 0px;
         }
     }
 
@@ -287,7 +288,7 @@
                 right: 0;
                 z-index: 9;
                 top: 14px;
-                background-color: #fff;
+                // background-color: #fff;
 
                 .arrow-btn {
                     border-radius: 100%;
@@ -433,6 +434,15 @@
 .wuudly__vision {
     h2 {
         font-size: 460px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 512.206px;
+        /* 111.349% */
+        letter-spacing: -13.8px;
+    }
+    h2.mission {
+        font-size: 395px;
+        white-space: nowrap;
         font-style: normal;
         font-weight: 700;
         line-height: 512.206px;

@@ -24,7 +24,7 @@ export default function Footer() {
             <div className="col-md-3">
               <div className="footer__widgets">
                 <h5>Contact</h5>
-                <p>Wuudply Ltd, Mill Road,<br /> Valapattanam, Kerala 670010</p>
+                <p>Primeply Industries Ltd, Mill Road,<br /> Valapattanam, Kerala 670010</p>
               </div>
             </div>
             <div className="col-md-3">
@@ -32,11 +32,10 @@ export default function Footer() {
                 <h5>Follow</h5>
                 <div className="social__links">
                   <ul>
-                    <li><a href="#" target='_blank'>Facebook</a></li>
-                    <li><a href="#" target='_blank'>Instagram</a></li>
+                  <li><a href="https://www.facebook.com/people/wuudply/100089879648776/?mibextid=LQQJ4d" target='_blank'>Facebook</a></li>
+                    <li><a href="https://www.instagram.com/wuudply/" target='_blank'>Instagram</a></li>
                     <li><a href="#" target='_blank'>Linkedin</a></li>
-                    {/* <li><a href="#" target='_blank'>Whatsapp</a></li> */}
-                    <li><a href="#" target='_blank'>X</a></li>
+                    <li><a href="https://twitter.com/wuudply?s=21&t=fewMq4Eu06XGaJE98L2oIQ" target='_blank'>X</a></li>
                   </ul>
                 </div>
               </div>

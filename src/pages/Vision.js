@@ -17,6 +17,17 @@ export default function Vision() {
                 </div>
 
             </div>
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-9">
+                        <h2 data-aos="fade-up" data-aos-duration="1500" className='mission'>Mission</h2>
+                    </div>
+                </div>
+                <div className="offset-md-5">
+                <h5 data-aos="fade-up" data-aos-duration="2000">We manufacture and market high-quality plywood across various price ranges, prioritizing both the well-being of our employees and the excellence of our products. Our disciplined, competent, and committed team ensures accessibility and availability of our products in all markets we serve. With well-equipped machinery and a safe working environment, we produce the finest plywoods in the industry.</h5>
+                </div>
+
+            </div>
             <div className="vision__footer">
                 <img src="assets/img/vision-footer.png" className='w-100' alt="" />
             </div>

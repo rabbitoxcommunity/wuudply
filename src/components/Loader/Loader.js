@@ -3,8 +3,8 @@ import './Loader.scss'
 function Loader() {
   return (
     <div className='setLoading'>
-          <div className="lds-ripple"><div></div><div></div></div>
-        </div>
+        <img src='assets/img/loader.jpg'/>
+    </div>
   )
 }
 
