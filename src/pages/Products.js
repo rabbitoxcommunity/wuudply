@@ -19,9 +19,9 @@ export default function Products() {
                             <div className="image"><img src="assets/img/products/1.jpg" alt="" /></div>
                             <div className="title">Plywood <img src="assets/img/products/arrow.svg" alt="" /></div>
                         </div>
-                        <div className={`productGrid ${tabs === 'doores' ? 'active' : ''}`} onClick={() => setTabs('doores')}>
+                        <div className={`productGrid ${tabs === 'doors' ? 'active' : ''}`} onClick={() => setTabs('doors')}>
                             <div className="image"><img src="assets/img/products/2.jpg" alt="" /></div>
-                            <div className="title">Doores <img src="assets/img/products/arrow.svg" alt="" /></div>
+                            <div className="title">Doors <img src="assets/img/products/arrow.svg" alt="" /></div>
                         </div>
                         <div className={`productGrid ${tabs === 'blockBoard' ? 'active' : ''}`} onClick={() => setTabs('blockBoard')}>
                             <div className="image"><img src="assets/img/products/3.jpg" alt="" /></div>
@@ -42,7 +42,7 @@ export default function Products() {
                         <Plywood />
                     }
                     {
-                        tabs === 'doores' &&
+                        tabs === 'doors' &&
                         <Doors />
                     }
                     {

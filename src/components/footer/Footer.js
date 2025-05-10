@@ -25,6 +25,7 @@ export default function Footer() {
               <div className="footer__widgets">
                 <h5>Contact</h5>
                 <p>Primeply Industries Ltd, Mill Road,<br /> Valapattanam, Kerala 670010</p>
+                <a href="/assets/Wuudply_brochure.pdf" target='_blank'><button className="btn btn-secondary mt-5">Download Brochure</button></a>
               </div>
             </div>
             <div className="col-md-3">

@@ -18,14 +18,14 @@ function Contact() {
     const [loading, setLoading] = useState(false)
 
 
-    const onSubmit = (data) => {
-        console.log(form.current)
-        setLoading(true);
+    emailjs.init('U1aOWkKZmomqW8dVS');
 
+    const onSubmit = (data) => {
+        console.log(form.current);
+        setLoading(true);
+    
         emailjs
-            .sendForm('service_x3xbbpd', 'template_a5q013o', form.current, {
-                publicKey: 'U1aOWkKZmomqW8dVS',
-            })
+            .sendForm('service_x3xbbpd', 'template_a5q013o', form.current)
             .then(
                 () => {
                     reset();
@@ -38,11 +38,10 @@ function Contact() {
                 },
                 (error) => {
                     setLoading(false);
+                    console.error('EmailJS error:', error); // Log the error for more context
                     toast.error("Please check your form", { position: "bottom-right" });
                 },
             );
-
-
     };
 
     return (
@@ -59,6 +58,7 @@ function Contact() {
                         <div className="col-md-6">
                             <form ref={form} onSubmit={handleSubmit(onSubmit)} data-aos="fade-up" data-aos-duration="3000">
                                 <div className="form-group">
+                                <input type="hidden" name="website" value="Wuudply"/>
                                     <label htmlFor="name">Name</label>
                                     <input type="text" className="form-control" name='name' {...register("name", { required: true })} />
                                     {errors.name && <span>Please enter name</span>}

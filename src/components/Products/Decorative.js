@@ -12,7 +12,7 @@ export default function Decorative() {
       top_title: 'KRAFT',
       image: 'assets/img/kraft.jpg',
       title: 'Decorative veneers',
-      sub_title: '15 YEARS GUARANTEE',
+      // sub_title: '15 YEARS GUARANTEE',
       desc: 'One of the founding product, Wuudply Kraft Decorative Veneers, tailored to customer preferences at competitive prices. Ideal for pasting onto plywood/boards for a natural wood finish or polishing for a luxurious look. Continuously evolving to meet market demands, inquire about our latest offerings.',
       table_title: 'Technical Specification',
       table: <Table hover>
@@ -92,7 +92,7 @@ export default function Decorative() {
                   <div className="col-md-6">
                     <div className="product__details pt-5">
                       <h2>{ele.title}</h2>
-                      <Subtitle title={ele.sub_title} />
+                      {/* <Subtitle title={ele.sub_title} /> */}
                       <h5 className='pb-0'>{ele.desc}</h5>
                       <h5>Species: Teak, Wenge, Sapele, Red Oak, Walnut</h5>
                       <h6>{ele.table_title}</h6>

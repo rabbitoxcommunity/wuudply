@@ -12,7 +12,7 @@ function BlockBoard() {
       top_title: 'WUUDBOARD',
       image: 'assets/img/wuudboard.jpg',
       title: '(IS1659)',
-      sub_title: '15 YEARS GUARANTEE',
+      // sub_title: '15 YEARS GUARANTEE',
       desc: 'Wuudboard: crafted from premium timber, seasoned for uniform moisture, and sterilized to eliminate wood-destroying organisms. Rigorous quality checks ensure smooth, uniform block boards, perfect for easy lamination without deformation.',
       table_title: 'Technical Specification',
       table: <Table hover>
@@ -93,7 +93,7 @@ function BlockBoard() {
                     <div className="col-md-6">
                       <div className="product__details pt-5">
                         <h2>{ele.title}</h2>
-                        <Subtitle title={ele.sub_title} />
+                        {/* <Subtitle title={ele.sub_title} /> */}
                         <h5 className='pb-0'>{ele.desc}</h5>
                         <h5>Species: Teak, Wenge, Sapele, Red Oak, Walnut</h5>
                         <h6>{ele.table_title}</h6>
