@@ -9,7 +9,7 @@ export default function Home() {
   }, []);
   return (
     <>
-      <section className="wuudply__banner p-0">
+      <section className="primeply__banner p-0">
         <video className="video-item" autoPlay={true} muted={true} loop={true} playsInline={true}>
           <source src="assets/videos/banner.mp4" type="video/mp4" />
         </video>
@@ -17,7 +17,7 @@ export default function Home() {
           <h1 data-aos="fade-in" data-aos-duration="5000">Quality Beyond Guarantee</h1>
         </div>
       </section>
-      <section className="wuudply__about">
+      <section className="primeply__about">
         <div className="container">
           <div className="offset-md-6 col-md-6">
             <div className="about__content" data-aos="fade-up">
@@ -27,7 +27,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="wuudply__featured">
+      <section className="primeply__featured">
         <div className="container">
           <div className="featured__grid"  data-aos="fade-in">
             <div className="row align-items-center"> 
@@ -70,7 +70,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="wuudply__bestselling">
+      <section className="primeply__bestselling">
         <div className="container">
           <div className="heading" data-aos="fade-up">
             <h3>Our Bestselling <br />Products</h3>

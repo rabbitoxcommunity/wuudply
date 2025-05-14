@@ -6,7 +6,7 @@ export default function Footer() {
   const d = new Date();
   let year = d.getFullYear();
   return (
-    <div className='wuudply__footer'>
+    <div className='primeply__footer'>
       <div className="upper__footer">
         <div className="container">
           <div className="row justify-content-between">
@@ -24,8 +24,7 @@ export default function Footer() {
             <div className="col-md-3">
               <div className="footer__widgets">
                 <h5>Contact</h5>
-                <p>Primeply Industries Ltd, Mill Road,<br /> Valapattanam, Kerala 670010</p>
-                <a href="/assets/Wuudply_brochure.pdf" target='_blank'><button className="btn btn-secondary mt-5">Download Brochure</button></a>
+                <p>primeply Ltd, Mill Road,<br /> Valapattanam, Kerala 670010</p>
               </div>
             </div>
             <div className="col-md-3">
@@ -43,7 +42,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="row">
-            <div className="copyright"><p>© Copyright {year} Wuudply</p></div>
+            <div className="copyright"><p>© Copyright {year} primeply</p></div>
           </div>
         </div>
       </div>

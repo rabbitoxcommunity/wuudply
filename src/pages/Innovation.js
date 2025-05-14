@@ -15,7 +15,7 @@ export default function Innovation() {
             <div className="banner__innovation" style={{backgroundImage:'url(assets/img/innovation-banner.jpg)'}}>
                <div className="container">
                <div className="offset-md-6 offset-tab-4">
-               <h4 data-aos="fade-up" data-aos-duration="1500">Wuudply represents the flawless synergy between Innovation, quality, aesthetics, and customer-centricity, yielding exceptional products. This esteemed reputation has positioned Wuudply as the preferred choice among top-tier builders and architects.</h4>
+               <h4 data-aos="fade-up" data-aos-duration="1500">primeply represents the flawless synergy between Innovation, quality, aesthetics, and customer-centricity, yielding exceptional products. This esteemed reputation has positioned primeply as the preferred choice among top-tier builders and architects.</h4>
                </div>
                </div>
             </div>

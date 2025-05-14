@@ -12,9 +12,11 @@ export default function About() {
           </div>
         </div>
         <div className="offset-md-6">
-          <h5 data-aos="fade-up" data-aos-duration="1000">Our expertise lies in crafting top-tier Gurjan wood and related products, including plywood, flush doors, block boards, and decorative veneers, ideal for both residential and commercial spaces.</h5>
-          <h5 data-aos="fade-up" data-aos-duration="1500">Sourcing our materials meticulously, we prioritize Gurjan wood from Myanmar, leveraging our own factory for direct control over quality and sustainability practices. </h5>
-          <h5 data-aos="fade-up" data-aos-duration="2000">Our flagship offering, Platino, boasts an exclusive 100% Gurjan composition, both in its core and face layers. This ensures exceptional stability, strength, and protection against warping, setting a new standard of excellence in plywood craftsmanship. As pioneers in India, Primeply Industries Ltd. was the first to introduce plywood with Gurjan core veneers, exemplifying our commitment to setting industry standards through quality and innovation.</h5>
+          <h5 data-aos="fade-up" data-aos-duration="1000">
+            We are well-known for our expertise in crafting high-quality gurjan wood and related products. Our range includes plywood, flush doors, block boards, and decorative veneers, suitable for both homes and offices. We carefully source logs and veneers from Myanmar, prioritizing Gurjan wood for its excellent resistance to borers and termites. Each product undergoes a thorough 5-step process to ensure durability.
+          </h5>
+          <h5 data-aos="fade-up" data-aos-duration="1500">Our flagship product, primeply plywood, is made from 100% Gurjan timber, ensuring exceptional stability and a guarantee against warping. As pioneers in India, Primeply Industries. was the
+            first to offer plywood with Gurjan core veneers, demonstrating our dedication to quality and innovation in the industry.</h5>
         </div>
         <div className="col-md-12">
           <h2 className='core' data-aos="fade-up">100% Gurjan</h2>
