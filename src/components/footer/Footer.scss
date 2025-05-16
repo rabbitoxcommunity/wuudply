@@ -99,6 +99,25 @@
         }
     }
 
+    .panelex {
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 32px;
+            letter-spacing: -3%;
+            width: 50%;
+            margin-left: auto;
+
+        }
+    }
+
     .footer__bottom {
         background: #FFCE69;
         padding: 60px 0;
@@ -118,6 +137,15 @@
             }
 
             .footer__logo {
+                p.panelex{
+font-weight: 300;
+font-size: 22px;
+line-height: 32px;
+letter-spacing: -3%;
+text-align: center;
+margin-bottom: 40px;
+
+                }
                 img {
                     width: 100%;
                 }

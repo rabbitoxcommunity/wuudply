@@ -7,6 +7,8 @@ import Vision from '../pages/Vision'
 import Innovation from '../pages/Innovation'
 import Gallery from '../pages/Gallery'
 import Contact from '../pages/Contact'
+import PHome from '../pages/Panelex/PHome'
+import PAbout from '../pages/Panelex/PAbout'
 
 function RouteHandler() {
   return (
@@ -18,6 +20,11 @@ function RouteHandler() {
       <Route path="/innovation" element={<Innovation />} />
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/contact" element={<Contact />} />
+
+      {/* PANALEX */}
+      <Route path="/panelex" element={<PHome />}>
+        <Route path="about" element={<PAbout />} />
+      </Route>
     </Routes>
   )
 }
