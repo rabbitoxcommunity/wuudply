@@ -22,7 +22,7 @@ export default function Home() {
           <div className="row justify-content-center">
             <div className="col-9 sm-w-100">
               <div className="about__content" data-aos="fade-up">
-                <h4>Primeply is one of the most trusted names in South India for authentic timber-based plywood since 1986, from the house of Primeply Industries Ltd which also produces Primeply.</h4>
+                <h4>Primeply is one of the most trusted names in South India for authentic timber-based plywood since 1986, from the house of Primeply Industries Ltd which also produces Wuudply.</h4>
                 <Link to='/about'><button className='btn btn-secondary'>Learn More</button></Link>
               </div>
             </div>

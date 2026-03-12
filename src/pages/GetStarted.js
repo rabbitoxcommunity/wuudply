@@ -22,7 +22,12 @@ export default function GetStarted() {
             image: 'assets/img/logo.svg',
             width:'60%',
             url :'/home'
-        }
+        },
+         {
+            image: 'assets/panelex/logo.svg',
+            width:'80%',
+            url :'/panelex'
+        },
     ]
     const goPrev = () => {
         if (swiper !== null) {
@@ -118,14 +123,13 @@ export default function GetStarted() {
                     <div className="container">
                         <div className="title"><h2>Milestone</h2></div>
                         <div className="scroll__bar row">
-
-                        <div className="milesGrid col-md-4" data-aos="fade-up" data-aos-duration="1000">
-                            <h2>1980</h2>
-                            <p>Saw Mill</p>
-                        </div>
                         <div className="milesGrid col-md-4" data-aos="fade-up" data-aos-duration="2000">
                             <h2>1960</h2>
                             <p>Timber Trading by C. Mammu</p>
+                        </div>
+                        <div className="milesGrid col-md-4" data-aos="fade-up" data-aos-duration="1000">
+                            <h2>1980</h2>
+                            <p>Saw Mill</p>
                         </div>
                         <div className="milesGrid col-md-4" data-aos="fade-up" data-aos-duration="3000">
                             <h2>1986</h2>
@@ -133,7 +137,7 @@ export default function GetStarted() {
                         </div>
                         <div className="milesGrid col-md-4" data-aos="fade-up" data-aos-duration="4000">
                             <h2>1990</h2>
-                            <p>Resin Planet</p>
+                            <p>Resin Plant</p>
                         </div>
                         <div className="milesGrid col-md-4" data-aos="fade-up" data-aos-duration="5000">
                             <h2>2000</h2>

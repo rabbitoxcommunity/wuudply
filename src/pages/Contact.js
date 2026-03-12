@@ -59,6 +59,7 @@ function Contact() {
                         <div className="col-md-6">
                             <form ref={form} onSubmit={handleSubmit(onSubmit)} data-aos="fade-up" data-aos-duration="3000">
                                 <div className="form-group">
+                                <input type="hidden" name="website" value="Primeply" />
                                     <label htmlFor="name">Name</label>
                                     <input type="text" className="form-control" name='name' {...register("name", { required: true })} />
                                     {errors.name && <span>Please enter name</span>}

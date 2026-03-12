@@ -17,6 +17,7 @@ section.getStarted {
         padding-top: 18%;
         background-repeat: no-repeat;
         background-size: cover;
+
         h1 {
             color: #000;
             text-align: center;
@@ -202,6 +203,46 @@ section.getStarted {
     }
 }
 
+.panelex__banner {
+    position: relative;
+
+    &::after {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .banner__content {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        max-width: 1320px;
+        z-index: 2;
+
+        // transform: translate(-50%,-50%);
+        h1 {
+            color: #fff;
+            font-size: 100px;
+            line-height: 1.1;
+            font-family: var(--font-primary);
+        }
+    }
+}
+
 .primeply__banner {
     position: relative;
     width: 100%;
@@ -210,6 +251,8 @@ section.getStarted {
     object-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+
 
     &::after {
         content: '';
@@ -273,6 +316,7 @@ section.getStarted {
         border-radius: 20px;
         overflow: auto;
         margin-bottom: 30px;
+        overflow: hidden;
 
         .featured__content {
             padding: 50px;
@@ -388,7 +432,7 @@ section.getStarted {
         letter-spacing: -0.48px;
 
         &:first-child {
-           
+
             padding-top: 60px;
         }
 
@@ -607,7 +651,7 @@ section.getStarted {
                     font-weight: 300;
                     line-height: 38.4px;
                     letter-spacing: -0.48px;
-                    padding: 10px 0px 30px 0px;
+                    padding: 10px 0px 20px 0px;
 
                 }
 
@@ -671,6 +715,7 @@ section.getStarted {
         /* 111.349% */
         letter-spacing: -13.8px;
     }
+
     h2.mission {
         font-size: 395px;
         white-space: nowrap;
