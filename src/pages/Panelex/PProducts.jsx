@@ -8,10 +8,8 @@ export default function PProducts() {
     const [showFilter, setShowFilter] = useState(false);
     const [searchTerm, setSearchTerm] = useState("");
     
-    // Derived state from URL parameter
-    const selectedEffect = effectParam && effectParam !== "All" 
-        ? (effectParam === "Oxford Hues" ? "Hues" : effectParam) 
-        : null;
+    // Use parameter directly, handle mapping in logic
+    const selectedEffect = effectParam && effectParam !== "All" ? effectParam : null;
 
 
     const [products, setProducts] = useState([]);
@@ -78,7 +76,18 @@ export default function PProducts() {
 
     const filteredProducts = products.filter((product) => {
         const matchesSearch = (product.title + product.desc).toLowerCase().includes(searchTerm.toLowerCase());
-        const matchesEffect = selectedEffect ? product.type === selectedEffect : true;
+        
+        let matchesEffect = true;
+        if (selectedEffect) {
+            const productType = (product.type || "").trim();
+            // Handle both "Hues" and "Oxford Hues" as equivalent for filtering
+            if (selectedEffect === "Hues" || selectedEffect === "Oxford Hues") {
+                matchesEffect = (productType === "Hues" || productType === "Oxford Hues");
+            } else {
+                matchesEffect = productType === selectedEffect;
+            }
+        }
+        
         return matchesSearch && matchesEffect;
     });
 
@@ -124,7 +133,8 @@ export default function PProducts() {
         { name: "All", img: "/assets/panelex/categories/filter5.png" },
     ];
 
-    const bannerData = effectBannerContent[selectedEffect] || effectBannerContent["All"];
+    const bannerKey = selectedEffect === "Oxford Hues" ? "Hues" : (selectedEffect || "All");
+    const bannerData = effectBannerContent[bannerKey] || effectBannerContent["All"];
 
     const handleEffectClick = (effect) => {
         if (effect === "All") {
