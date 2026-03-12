@@ -32,7 +32,7 @@ function RouteHandler() {
       <Route path="/panelex" element={<PHome />} />
       <Route path="/panelex/about" element={<PAbout />} />
       <Route path="/panelex/mission" element={<PMission />} />
-      <Route path="/panelex/products" element={<PProducts />} />
+      <Route path="/panelex/products/:effect?" element={<PProducts />} />
       <Route path="/panelex/product-details/:id" element={<ProductDetails />} />
       <Route path="/panelex/contact" element={<PContact />} />
     </Routes>

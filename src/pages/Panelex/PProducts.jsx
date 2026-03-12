@@ -1,11 +1,17 @@
 import Aos from 'aos';
 import React, { useEffect, useRef, useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 
 export default function PProducts() {
+    const { effect: effectParam } = useParams();
+    const navigate = useNavigate();
     const [showFilter, setShowFilter] = useState(false);
     const [searchTerm, setSearchTerm] = useState("");
-    const [selectedEffect, setSelectedEffect] = useState(null);
+    
+    // Derived state from URL parameter
+    const selectedEffect = effectParam && effectParam !== "All" 
+        ? (effectParam === "Oxford Hues" ? "Hues" : effectParam) 
+        : null;
 
 
     const [products, setProducts] = useState([]);
@@ -121,13 +127,11 @@ export default function PProducts() {
     const bannerData = effectBannerContent[selectedEffect] || effectBannerContent["All"];
 
     const handleEffectClick = (effect) => {
-        // if (effect === "Oxford Hues") {
-        //     setSelectedEffect("Hues")
-        // } else {
-        //     setSelectedEffect(effect === "All" ? null : effect);
-        // }
-        setSelectedEffect(effect === "All" ? null : effect);
-
+        if (effect === "All") {
+            navigate("/panelex/products");
+        } else {
+            navigate(`/panelex/products/${effect}`);
+        }
         setShowFilter(false);
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
@@ -170,7 +174,11 @@ export default function PProducts() {
                                     {filterOptions.map((option, index) => (
                                         <div
                                             key={index}
-                                            className={`grid ${selectedEffect === option.name || (option.name === "All" && selectedEffect === null) ? 'active' : ''}`}
+                                            className={`grid ${
+                                                (option.name === "All" && !effectParam) || 
+                                                (effectParam === option.name) 
+                                                ? 'active' : ''
+                                            }`}
                                             onClick={() => handleEffectClick(option.name)}
                                         >
                                             <img src={option.img} alt={option.name} />

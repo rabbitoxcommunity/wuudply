@@ -24,7 +24,7 @@ function App() {
       }, 1000);
     }, [location.pathname]);
 
-  const panelexRoutes = ['/panelex', '/panelex/about', '/panelex/mission', '/panelex/products', '/panelex/contact', '/panelex/product-details/:id']
+  const panelexRoutes = ['/panelex', '/panelex/about', '/panelex/mission', '/panelex/products', '/panelex/products/:effect', '/panelex/contact', '/panelex/product-details/:id']
   const isPanelexRoute = panelexRoutes.some(route =>
     matchPath({ path: route, end: true }, location.pathname)
   );

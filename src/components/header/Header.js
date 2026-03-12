@@ -12,7 +12,7 @@ export default function Header() {
     if (location.pathname == '/home') {
       sethomePage(true)
       setmenuActive(false)
-    }else{
+    } else {
       sethomePage(false)
       setmenuActive(false)
     }
@@ -50,11 +50,11 @@ export default function Header() {
             <i className="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
             <i className="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
             <nav className="navbar">
-            <Link to='/contact' style={{textDecoration:'none'}}> <div className="contact btn btn-primary hidden-xs">Contact <img src="assets/img/menubtn-arrow.svg" alt="" /></div></Link>
-  
+              <Link to='/contact' style={{ textDecoration: 'none' }}> <div className="contact btn btn-primary hidden-xs">Contact <img src="assets/img/menubtn-arrow.svg" alt="" /></div></Link>
+
               <div className={`menu-toggle ${menuActive ? 'active' : ''}`} onClick={handleMenu}>
-                <div className={`line ${ homePage && 'home-line'}`}></div>
-                <div className={`line ${ homePage && 'home-line'}`} ></div>
+                <div className={`line ${homePage && 'home-line'}`}></div>
+                <div className={`line ${homePage && 'home-line'}`} ></div>
               </div>
             </nav>
           </div>
@@ -64,19 +64,19 @@ export default function Header() {
         <div className={`menu__lists ${menuActive ? 'show' : ''}`}>
           <div className="container">
             <div className="menu__items">
-            <ul>
-              <li><Link to='/about'>About</Link></li>
-              <li><Link to='/products'>Product</Link></li>
-              <li><Link to='/vision'>Vision</Link></li>
-              <li><Link to='/innovation'>Innovation</Link></li>
-              <li><Link to='/gallery'>Gallery</Link></li>
-              <li><Link to='/contact'>contact</Link></li>
-            </ul>
-            <div className="logo__menu">
-              <img src="assets/img/logo.svg" alt="" />
+              <ul>
+                <li><Link to='/about'>About</Link></li>
+                <li><Link to='/products'>Product</Link></li>
+                <li><Link to='/vision'>Vision</Link></li>
+                <li><Link to='/innovation'>Innovation</Link></li>
+                <li><Link to='/gallery'>Gallery</Link></li>
+                <li><Link to='/contact'>contact</Link></li>
+              </ul>
+              <div className="logo__menu">
+                <img src="assets/img/logo.svg" alt="" />
+              </div>
             </div>
-            </div>
-           
+
           </div>
         </div>
 
