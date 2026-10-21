@@ -28,6 +28,11 @@ export default function GetStarted() {
             width:'80%',
             url :'/panelex'
         },
+        {
+            image: 'assets/canboard/logo.png',
+            width:'80%',
+            url :'https://canboard.in/'
+        },
     ]
     const goPrev = () => {
         if (swiper !== null) {
